@@ -1,0 +1,21 @@
+{
+  "source": "03_Shared_Benchmark_and_Submission_Gate.md section C (wording preserved); Q8 is Pathfinder-specific",
+  "questions": [
+    {"id": "Q1", "mode": "comparison", "required": true,
+     "question": "Compare Qdrant, Weaviate, and Milvus for a small team building RAG; consider deployment, filtering and operational effort."},
+    {"id": "Q2", "mode": "discovery", "required": true,
+     "question": "Identify five India-based B2B SaaS companies in HR technology, with evidence for headquarters/market and positioning."},
+    {"id": "Q3", "mode": "comparison", "required": true,
+     "question": "Compare single-agent and multi-agent support automation for a 20-person SaaS company, considering complexity, cost, reliability and safeguards."},
+    {"id": "Q4", "mode": "comparison", "required": true,
+     "question": "Compare approaches to short-term and long-term memory in customer-support AI agents, including retrieval, privacy and retention."},
+    {"id": "Q5", "mode": "comparison", "required": true,
+     "question": "Choose between managed and self-hosted vector databases for a startup with one backend engineer and limited operations time."},
+    {"id": "Q6", "mode": "comparison", "required": false,
+     "question": "Compare current published pricing terms of two chosen vector platforms using the official pricing pages; state retrieval date and unresolved gaps."},
+    {"id": "Q7", "mode": "comparison", "required": false, "note": "underspecified: must state assumptions, no universal winner",
+     "question": "Which vector database is best?"},
+    {"id": "Q8", "mode": "discovery", "required": true, "note": "project-added second discovery question (not in shared gate list)",
+     "question": "Identify five open-source LLM evaluation or observability tools, with evidence for license and self-hosting support."}
+  ]
+}

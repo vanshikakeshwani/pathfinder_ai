@@ -1,0 +1,161 @@
+{
+  "run_id": "EVAL_Q2_adaptive_r1_20261029T225458_c735ac",
+  "question": "Identify five India-based B2B SaaS companies in HR technology, with evidence for headquarters/market and positioning.",
+  "mode": "discovery",
+  "short_answer": "1/5 required units verified (PeopleStrong). The evidence establishes PeopleStrong as a Gurugram-headquartered HCM SaaS provider positioned across the employee lifecycle for enterprises. For the other named companies, the materials support HR-product positioning, but leave gaps in India-headquarters evidence and, for ZingHR and greytHR, explicit B2B SaaS evidence.",
+  "findings": [
+    {
+      "text": "PeopleStrong’s evidence covers headquarters, SaaS delivery, and enterprise HR positioning: it is identified as headquartered in Gurugram and offers an HCM SaaS platform spanning the employee lifecycle.",
+      "evidence_ids": [
+        "EV_13",
+        "EV_14",
+        "EV_15"
+      ]
+    },
+    {
+      "text": "ZingHR is described as offering an AI-powered hire-to-rehire HR platform and serving enterprises, including Fortune 500 companies; the supplied evidence does not establish its India headquarters or explicitly document SaaS delivery.",
+      "evidence_ids": [
+        "EV_2",
+        "EV_3"
+      ]
+    },
+    {
+      "text": "greytHR is positioned as a hire-to-retire HRMS and full-suite HR and payroll product for companies; the supplied evidence does not establish its India headquarters or explicitly document SaaS delivery.",
+      "evidence_ids": [
+        "EV_4",
+        "EV_5"
+      ]
+    },
+    {
+      "text": "Timelabs offers connected HRMS capabilities and identifies SaaS licensing and business customers ranging from startups to enterprises. The supplied evidence does not establish its India headquarters.",
+      "evidence_ids": [
+        "EV_6",
+        "EV_17",
+        "EV_18"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC_1",
+      "url": "https://www.peoplestrong.com/about-us/",
+      "title": "About Us | PeopleStrong HR Technologies",
+      "domain": "peoplestrong.com",
+      "retrieved_at": "2026-10-29T22:54:58+00:00",
+      "published_at": null
+    },
+    {
+      "source_id": "SRC_2",
+      "url": "https://www.zinghr.com/?vahukId=152093541738487",
+      "title": "ZingHR | Enterprise HCM for the End of Transactional HR",
+      "domain": "zinghr.com",
+      "retrieved_at": "2026-10-29T22:54:58+00:00",
+      "published_at": "2024-01-01T16:32:14.000Z"
+    },
+    {
+      "source_id": "SRC_3",
+      "url": "https://www.greythr.com/",
+      "title": "AI-First Full Suite HRMS & Payroll Software | greytHR",
+      "domain": "greythr.com",
+      "retrieved_at": "2026-10-29T22:54:58+00:00",
+      "published_at": null
+    },
+    {
+      "source_id": "SRC_4",
+      "url": "https://www.timelabs.in/",
+      "title": "HR & Payroll Software | One-Stop HRMS Solution | Timelabs",
+      "domain": "timelabs.in",
+      "retrieved_at": "2026-10-29T22:54:58+00:00",
+      "published_at": null
+    },
+    {
+      "source_id": "SRC_5",
+      "url": "https://aws.amazon.com/marketplace/pp/prodview-734bpejg7urh4",
+      "title": "PeopleStrong Human Capital Management | AWS Marketplace",
+      "domain": "amazon.com",
+      "retrieved_at": "2026-10-29T22:55:00+00:00",
+      "published_at": null
+    },
+    {
+      "source_id": "SRC_6",
+      "url": "https://www.peoplestrong.com/terms-of-service-jinie/",
+      "title": "Terms of Service Jinie | PeopleStrong",
+      "domain": "peoplestrong.com",
+      "retrieved_at": "2026-10-29T22:55:00+00:00",
+      "published_at": null
+    },
+    {
+      "source_id": "SRC_7",
+      "url": "https://www.peoplestrong.com/get-in-touch/",
+      "title": "Get in Touch | PeopleStrong",
+      "domain": "peoplestrong.com",
+      "retrieved_at": "2026-10-29T22:55:19+00:00",
+      "published_at": null
+    },
+    {
+      "source_id": "SRC_8",
+      "url": "https://www.peoplestrong.com/blog/peoplestrong-announces-a-majority-stake-investment-from-goldman-sachs-alternatives/",
+      "title": "📢 Goldman Sachs Acquires Majority Stake in PeopleStrong",
+      "domain": "peoplestrong.com",
+      "retrieved_at": "2026-10-29T22:55:19+00:00",
+      "published_at": "2025-04-15T12:00:31.000Z"
+    },
+    {
+      "source_id": "SRC_9",
+      "url": "https://www.timelabs.in/hr-software-pricing",
+      "title": "HR Software Pricing & Plans | Custom Quote | Timelabs",
+      "domain": "timelabs.in",
+      "retrieved_at": "2026-10-29T22:55:47+00:00",
+      "published_at": null
+    },
+    {
+      "source_id": "SRC_10",
+      "url": "https://www.timelabs.in/Cloud-Based-Hr-Software.aspx",
+      "title": "Cloud Based HR System",
+      "domain": "timelabs.in",
+      "retrieved_at": "2026-10-29T22:55:47+00:00",
+      "published_at": null
+    }
+  ],
+  "confidence": "low",
+  "confidence_rule": "confidence = coverage 100% -> lowest factual confidence of counted evidence; coverage >= 60% -> at most moderate; otherwise low.",
+  "factual_confidence": "moderate",
+  "decision_stability": null,
+  "recommended": null,
+  "assumptions": [
+    "Interpret India-based as headquartered in India, rather than merely having an office or customers there.",
+    "Include privately held and publicly listed companies, provided they meet the stated criteria.",
+    "Accept official company materials and reputable independent sources as evidence for headquarters, business model, and positioning."
+  ],
+  "limitations": [
+    "Fit scores (0/1/2) are model-assisted assessments under the disclosed rubric and weights, not measurements.",
+    "Support verification uses the same model family as extraction; it is not ground truth and needs human audit.",
+    "'Robust' means interval dominance under the chosen criteria and weights, not that the option is factually best.",
+    "Not fully covered: india_based, b2b_saas, hr_technology, positioning_evidence.",
+    "Only 1 of 5 requested entities were verified on every required facet; the task is not complete.",
+    "5 extracted candidate(s) were rejected by grounding/verification (see verification_log.jsonl).",
+    "Stopped: budget_exhausted (MAX_RESEARCH_ROUNDS=3 reached)."
+  ],
+  "next_steps": [
+    "Find reliable headquarters evidence for ZingHR, greytHR, and Timelabs.",
+    "Verify explicit B2B SaaS delivery evidence for ZingHR and greytHR.",
+    "Identify a fifth candidate and verify its India headquarters, B2B SaaS model, and HR-tech positioning."
+  ],
+  "stop_reason": "budget_exhausted",
+  "status": "partial",
+  "decision_changes": [],
+  "decision_flip_count": 0,
+  "status_change_count": 0,
+  "research_budget_spent": {
+    "search_calls": 5,
+    "max_search_calls": 6,
+    "content_pages": 10,
+    "max_content_pages": 12,
+    "research_actions_spent": 15,
+    "llm_calls": 9,
+    "max_llm_calls": null,
+    "elapsed_s": 78.33,
+    "max_seconds": null
+  },
+  "synthetic": false
+}

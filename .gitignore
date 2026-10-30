@@ -1,0 +1,23 @@
+.venv/
+.venv*/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# secrets (only the template is committed)
+.env
+.env.*
+!.env.example
+!.env.deep.example
+
+# run outputs (real samples are copied into samples/ deliberately)
+outputs/
+
+# record/replay snapshots hold third-party page text (not redistributed; derived results are committed)
+evaluations/snapshots/
+evaluations/snapshots_*/

@@ -1,0 +1,388 @@
+{
+  "plan": {
+    "question": "Compare approaches to short-term and long-term memory in customer-support AI agents, including retrieval, privacy and retention.",
+    "mode": "comparison",
+    "alternatives": [
+      {
+        "name": "Session-only memory",
+        "aliases": [
+          "working memory",
+          "conversation-context memory"
+        ],
+        "official_domains": [],
+        "kind": "approach",
+        "defining_features": [
+          "Uses the current conversation or session context without persistent cross-session memory",
+          "Limits stored personal data and avoids long-term retrieval",
+          "Cannot recall prior interactions after the session unless supplied again"
+        ]
+      },
+      {
+        "name": "Persistent conversation-log retrieval",
+        "aliases": [
+          "transcript RAG",
+          "episodic memory retrieval"
+        ],
+        "official_domains": [],
+        "kind": "approach",
+        "defining_features": [
+          "Stores conversation turns or transcripts across sessions",
+          "Retrieves relevant past exchanges using search or embeddings",
+          "Can preserve detailed interaction history but requires controls for sensitive records"
+        ]
+      },
+      {
+        "name": "Summarized customer-profile memory",
+        "aliases": [
+          "profile memory",
+          "semantic memory"
+        ],
+        "official_domains": [],
+        "kind": "approach",
+        "defining_features": [
+          "Stores selected facts, preferences, and ongoing issues rather than full transcripts",
+          "Retrieves compact customer context across sessions",
+          "Requires processes to update, correct, and expire derived information"
+        ]
+      },
+      {
+        "name": "Hybrid layered memory",
+        "aliases": [
+          "episodic plus semantic memory",
+          "short- and long-term memory"
+        ],
+        "official_domains": [],
+        "kind": "approach",
+        "defining_features": [
+          "Combines current-session context with persistent summaries or profiles",
+          "May retrieve selected past episodes as well as stable customer facts",
+          "Can apply different access, retention, and deletion rules to different memory layers"
+        ]
+      }
+    ],
+    "criteria": [
+      {
+        "criterion_id": "retrieval_effectiveness",
+        "description": "How well the approach retrieves relevant, accurate context from the current interaction and, where applicable, prior sessions to support customer service.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Cannot reliably surface useful context for the user's short-term and long-term support needs.",
+          "plausible": "Supports useful context within its memory scope, but has notable limits in cross-session recall, relevance, or freshness.",
+          "strong": "Reliably surfaces relevant, current context across the short- and long-term memory needs the approach is designed to address."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "privacy_protection",
+        "description": "How well the approach minimizes unnecessary customer data exposure and supports privacy safeguards around stored or retrieved memories.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Retains or exposes substantial customer information without clear limits on what is stored or retrieved.",
+          "plausible": "Offers some data minimization or access controls, but privacy protections are incomplete or difficult to apply consistently.",
+          "strong": "Supports data minimization and clear, enforceable controls over what customer information is stored and made available to the agent."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "retention_and_deletion_control",
+        "description": "How well the approach supports defined retention periods and reliable correction, expiration, and deletion of customer memories.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Retention is difficult to limit, and correcting or deleting stored memories is unreliable.",
+          "plausible": "Some retention and deletion controls are available, but lifecycle management may be manual or incomplete.",
+          "strong": "Retention can be defined for relevant memory types, with dependable correction, expiration, and deletion processes."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      }
+    ],
+    "facets": [],
+    "target_entity_count": 0,
+    "assumptions": [
+      "The comparison is about general memory architectures for customer-support AI agents, not specific vendors or products.",
+      "No jurisdiction, regulatory regime, data sensitivity level, or retention period was specified.",
+      "No deployment model, technical stack, or customer-support channel was specified.",
+      "The requested comparison should cover both within-session context and cross-session memory where an approach supports it.",
+      "No stated priority for retrieval_effectiveness, privacy_protection, retention_and_deletion_control: equal default weight 3."
+    ],
+    "initial_queries": [
+      "session-only memory vs persistent conversation-log retrieval customer support AI agents retrieval privacy retention",
+      "summarized customer-profile memory vs hybrid layered memory customer support agents retrieval privacy retention"
+    ],
+    "search_context": ""
+  },
+  "cells": [
+    {
+      "alternative": "Session-only memory",
+      "criterion_id": "retrieval_effectiveness",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_1"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Session-only memory",
+      "criterion_id": "privacy_protection",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_2"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Session-only memory",
+      "criterion_id": "retention_and_deletion_control",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_3"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Persistent conversation-log retrieval",
+      "criterion_id": "retrieval_effectiveness",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_4"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Persistent conversation-log retrieval",
+      "criterion_id": "privacy_protection",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_5",
+        "EV_6"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Persistent conversation-log retrieval",
+      "criterion_id": "retention_and_deletion_control",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_7"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Summarized customer-profile memory",
+      "criterion_id": "retrieval_effectiveness",
+      "state": "unknown",
+      "lower": 0,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [],
+      "factual_confidence": "n.a.",
+      "independent_sources": 0,
+      "scopes": [],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Summarized customer-profile memory",
+      "criterion_id": "privacy_protection",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_8"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Summarized customer-profile memory",
+      "criterion_id": "retention_and_deletion_control",
+      "state": "unknown",
+      "lower": 0,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [],
+      "factual_confidence": "n.a.",
+      "independent_sources": 0,
+      "scopes": [],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Hybrid layered memory",
+      "criterion_id": "retrieval_effectiveness",
+      "state": "unknown",
+      "lower": 0,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [],
+      "factual_confidence": "n.a.",
+      "independent_sources": 0,
+      "scopes": [],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Hybrid layered memory",
+      "criterion_id": "privacy_protection",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_9"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Hybrid layered memory",
+      "criterion_id": "retention_and_deletion_control",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_10"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    }
+  ],
+  "bounds": {
+    "Session-only memory": [
+      12,
+      12
+    ],
+    "Persistent conversation-log retrieval": [
+      9,
+      9
+    ],
+    "Summarized customer-profile memory": [
+      3,
+      15
+    ],
+    "Hybrid layered memory": [
+      6,
+      12
+    ]
+  },
+  "targets": [
+    {
+      "alternative": "Hybrid layered memory",
+      "criterion_id": "retrieval_effectiveness",
+      "weight": 3,
+      "width": 2,
+      "flip_relevant": false,
+      "flip_factor": 1,
+      "predicted_gain": 6.0,
+      "priority": 3.0,
+      "state": "unknown"
+    },
+    {
+      "alternative": "Summarized customer-profile memory",
+      "criterion_id": "retention_and_deletion_control",
+      "weight": 3,
+      "width": 2,
+      "flip_relevant": false,
+      "flip_factor": 1,
+      "predicted_gain": 6.0,
+      "priority": 3.0,
+      "state": "unknown"
+    },
+    {
+      "alternative": "Summarized customer-profile memory",
+      "criterion_id": "retrieval_effectiveness",
+      "weight": 3,
+      "width": 2,
+      "flip_relevant": false,
+      "flip_factor": 1,
+      "predicted_gain": 6.0,
+      "priority": 3.0,
+      "state": "unknown"
+    }
+  ]
+}

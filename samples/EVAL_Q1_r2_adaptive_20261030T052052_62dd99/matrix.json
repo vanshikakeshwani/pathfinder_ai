@@ -1,0 +1,336 @@
+{
+  "plan": {
+    "question": "Compare Qdrant, Weaviate, and Milvus for a small team building RAG; consider deployment, filtering and operational effort.",
+    "mode": "comparison",
+    "alternatives": [
+      {
+        "name": "Qdrant",
+        "aliases": [],
+        "official_domains": [
+          "qdrant.tech"
+        ],
+        "kind": "named",
+        "defining_features": []
+      },
+      {
+        "name": "Weaviate",
+        "aliases": [],
+        "official_domains": [
+          "weaviate.io"
+        ],
+        "kind": "named",
+        "defining_features": []
+      },
+      {
+        "name": "Milvus",
+        "aliases": [],
+        "official_domains": [
+          "milvus.io"
+        ],
+        "kind": "named",
+        "defining_features": []
+      }
+    ],
+    "criteria": [
+      {
+        "criterion_id": "deployment_fit",
+        "description": "Fit of available deployment options for a small team building RAG, including setup, integration, and ability to choose an appropriate hosting model.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Deployment options or setup are a poor fit for a small RAG team and require substantial commitment or adaptation.",
+          "plausible": "Offers a workable deployment path, though setup or hosting choices may involve notable trade-offs for a small team.",
+          "strong": "Provides a clear, practical deployment path for a small RAG team with suitable hosting choices and manageable setup."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [
+          "managed",
+          "self_hosted"
+        ],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "filtering_capability",
+        "description": "Suitability of metadata filtering and query-time filtering for common RAG retrieval needs, including flexibility and usability.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Filtering is limited or awkward for common RAG metadata and query-time filtering needs.",
+          "plausible": "Supports common filtering needs, with some meaningful limitations or added complexity.",
+          "strong": "Provides flexible, well-supported filtering that readily accommodates common RAG retrieval patterns."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "operational_effort",
+        "description": "Ongoing effort for a small team to operate the vector database, including setup, upgrades, monitoring, scaling, and troubleshooting.",
+        "direction": "lower_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Requires substantial ongoing specialist effort or operational work that is difficult for a small team to sustain.",
+          "plausible": "Operational effort is manageable for a small team but involves notable ongoing maintenance or expertise.",
+          "strong": "Keeps routine operational work low and is practical for a small team to maintain."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [
+          "managed",
+          "self_hosted"
+        ],
+        "preferred_scope": null
+      }
+    ],
+    "facets": [],
+    "target_entity_count": 3,
+    "assumptions": [
+      "The team has limited operational capacity, but no specific team size or infrastructure expertise was given.",
+      "The intended workload is a typical RAG application using vector search with metadata filters; scale, latency, and availability requirements were not specified.",
+      "Both managed and self-hosted deployments should be considered because the user did not state a hosting preference.",
+      "No stated priority for deployment_fit, filtering_capability, operational_effort: equal default weight 3."
+    ],
+    "initial_queries": [
+      "Qdrant Weaviate Milvus deployment options official documentation",
+      "Qdrant Weaviate Milvus metadata filtering RAG comparison"
+    ],
+    "search_context": ""
+  },
+  "cells": [
+    {
+      "alternative": "Qdrant",
+      "criterion_id": "deployment_fit",
+      "state": "disputed",
+      "lower": 0,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [
+        "EV_1",
+        "EV_2",
+        "EV_9",
+        "EV_17"
+      ],
+      "factual_confidence": "low",
+      "independent_sources": 3,
+      "scopes": [
+        "managed",
+        "self_hosted"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Qdrant",
+      "criterion_id": "filtering_capability",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_3"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Qdrant",
+      "criterion_id": "operational_effort",
+      "state": "scope_dependent",
+      "lower": 1,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [
+        "EV_10",
+        "EV_11",
+        "EV_18",
+        "EV_19"
+      ],
+      "factual_confidence": "high",
+      "independent_sources": 2,
+      "scopes": [
+        "managed",
+        "self_hosted"
+      ],
+      "scope_scores": {
+        "managed": 2,
+        "self_hosted": 1
+      },
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Weaviate",
+      "criterion_id": "deployment_fit",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_4",
+        "EV_5"
+      ],
+      "factual_confidence": "high",
+      "independent_sources": 1,
+      "scopes": [
+        "managed",
+        "self_hosted"
+      ],
+      "scope_scores": {
+        "managed": 2,
+        "self_hosted": 2
+      },
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Weaviate",
+      "criterion_id": "filtering_capability",
+      "state": "disputed",
+      "lower": 0,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [
+        "EV_6",
+        "EV_12"
+      ],
+      "factual_confidence": "low",
+      "independent_sources": 2,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Weaviate",
+      "criterion_id": "operational_effort",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_13",
+        "EV_14"
+      ],
+      "factual_confidence": "high",
+      "independent_sources": 2,
+      "scopes": [
+        "self_hosted"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Milvus",
+      "criterion_id": "deployment_fit",
+      "state": "disputed",
+      "lower": 0,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [
+        "EV_8",
+        "EV_15"
+      ],
+      "factual_confidence": "low",
+      "independent_sources": 2,
+      "scopes": [
+        "self_hosted"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Milvus",
+      "criterion_id": "filtering_capability",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_7"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Milvus",
+      "criterion_id": "operational_effort",
+      "state": "supported",
+      "lower": 0,
+      "upper": 0,
+      "score": 0,
+      "evidence_ids": [
+        "EV_16"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "self_hosted"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    }
+  ],
+  "bounds": {
+    "Qdrant": [
+      9,
+      18
+    ],
+    "Weaviate": [
+      9,
+      15
+    ],
+    "Milvus": [
+      3,
+      9
+    ]
+  },
+  "targets": [
+    {
+      "alternative": "Qdrant",
+      "criterion_id": "deployment_fit",
+      "weight": 3,
+      "width": 2,
+      "flip_relevant": true,
+      "flip_factor": 2,
+      "predicted_gain": 12.0,
+      "priority": 6.0,
+      "state": "disputed"
+    },
+    {
+      "alternative": "Weaviate",
+      "criterion_id": "filtering_capability",
+      "weight": 3,
+      "width": 2,
+      "flip_relevant": true,
+      "flip_factor": 2,
+      "predicted_gain": 12.0,
+      "priority": 6.0,
+      "state": "disputed"
+    },
+    {
+      "alternative": "Milvus",
+      "criterion_id": "deployment_fit",
+      "weight": 3,
+      "width": 2,
+      "flip_relevant": false,
+      "flip_factor": 1,
+      "predicted_gain": 6.0,
+      "priority": 3.0,
+      "state": "disputed"
+    }
+  ]
+}

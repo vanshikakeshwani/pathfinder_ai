@@ -1,0 +1,154 @@
+{
+  "run_id": "EVAL_Q4_r1_adaptive_20261030T051000_398ba3",
+  "question": "Compare approaches to short-term and long-term memory in customer-support AI agents, including retrieval, privacy and retention.",
+  "mode": "comparison",
+  "short_answer": "Session-only memory leads provisionally, but score intervals overlap (Session-only memory [12,12], Persistent conversation-log retrieval [9,9], Summarized customer-profile memory [3,15], Hybrid layered memory [6,12]); current evidence does not force a unique recommendation. The main trade-off is immediate continuity within a conversation versus cross-session personalization that requires deliberate access, retention, and deletion controls. The evidence describes design properties more than measured retrieval quality, and it leaves retention periods and some lifecycle guarantees unspecified.",
+  "findings": [
+    {
+      "text": "Session-only memory uses information from the active conversation to avoid repeated questions, and its boundary is the end of that conversation; cross-session recall is a separate design choice. Its short-lived scope is described as limiting ongoing privacy exposure.",
+      "evidence_ids": [
+        "EV_1",
+        "EV_2",
+        "EV_3"
+      ]
+    },
+    {
+      "text": "Persistent conversation-log retrieval can load and search prior interactions before responding, but it requires controls beyond a stable customer identifier: scoped access, authorization across reads and deletion, and tenant-aware handling of caches and background work. Retention should be specified separately for transcripts and derived data, and deletion should cover retained copies.",
+      "evidence_ids": [
+        "EV_4",
+        "EV_5",
+        "EV_6",
+        "EV_7"
+      ]
+    },
+    {
+      "text": "Summarized profile memory is presented as a way to retain useful support context while omitting unnecessary transcript detail, including sensitive information. The evidence does not specify its retrieval performance or retention and deletion procedures.",
+      "evidence_ids": [
+        "EV_8"
+      ]
+    },
+    {
+      "text": "Hybrid layered memory distinguishes current business state, interaction history, and customer preferences, with separate intended uses and authorization rules. Its controller makes promotion, compression, and eviction inspectable under bounded capacity, but the evidence does not establish retention periods or reliable correction and deletion.",
+      "evidence_ids": [
+        "EV_9",
+        "EV_10"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC_1",
+      "url": "https://communicate.so/blog/conversation-memory-support-agent",
+      "title": "Conversation memory for a support agent: what to keep and forget - Blog · Communicate",
+      "domain": "communicate.so",
+      "retrieved_at": "2026-10-30T05:10:00+00:00",
+      "published_at": "2026-08-30T00:00:00.000Z"
+    },
+    {
+      "source_id": "SRC_4",
+      "url": "https://supermemory.ai/blog/ai-memory-customer-support-agents/",
+      "title": "AI Memory for Customer Support Agents: A Practical Architecture",
+      "domain": "supermemory.ai",
+      "retrieved_at": "2026-10-30T05:10:00+00:00",
+      "published_at": null
+    },
+    {
+      "source_id": "SRC_5",
+      "url": "https://arxiv.org/html/2604.16774",
+      "title": "Retention Consequence in Lifecycle Memory Control",
+      "domain": "arxiv.org",
+      "retrieved_at": "2026-10-30T05:10:02+00:00",
+      "published_at": "2026-05-27T00:00:00.000Z"
+    }
+  ],
+  "confidence": "moderate",
+  "confidence_rule": "confidence = min(interval stability, lowest factual confidence among the leader's supported/disputed cells); robust/high=high, provisional/moderate=moderate, otherwise low. A withheld recommendation caps confidence at moderate, and at low when the withholding is due to non-comparable evidence.",
+  "factual_confidence": "moderate",
+  "decision_stability": "provisional",
+  "recommended": null,
+  "interval_leader": "Session-only memory",
+  "recommendation_status": "withheld",
+  "recommendation_withheld_reasons": [
+    "score intervals overlap (provisional leader only)",
+    "differentiating cells lack strong support (single source or non-official): Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness"
+  ],
+  "comparability_issues": [],
+  "single_source_cells": [
+    "Session-only memory:retrieval_effectiveness",
+    "Session-only memory:privacy_protection",
+    "Session-only memory:retention_and_deletion_control",
+    "Persistent conversation-log retrieval:retrieval_effectiveness",
+    "Persistent conversation-log retrieval:privacy_protection",
+    "Persistent conversation-log retrieval:retention_and_deletion_control",
+    "Summarized customer-profile memory:privacy_protection",
+    "Hybrid layered memory:privacy_protection",
+    "Hybrid layered memory:retention_and_deletion_control"
+  ],
+  "requirement_coverage": {
+    "supported": 9,
+    "total": 12
+  },
+  "assumptions": [
+    "The comparison is about general memory architectures for customer-support AI agents, not specific vendors or products.",
+    "No jurisdiction, regulatory regime, data sensitivity level, or retention period was specified.",
+    "No deployment model, technical stack, or customer-support channel was specified.",
+    "The requested comparison should cover both within-session context and cross-session memory where an approach supports it.",
+    "No stated priority for retrieval_effectiveness, privacy_protection, retention_and_deletion_control: equal default weight 3."
+  ],
+  "limitations": [
+    "Fit scores (0/1/2) are model-assisted assessments under the disclosed rubric and weights, not measurements.",
+    "Support verification uses the same model family as extraction; it is not ground truth and needs human audit.",
+    "'Robust' means interval dominance under the chosen criteria and weights, not that the option is factually best.",
+    "Single-source support (one independent source): Session-only memory:retrieval_effectiveness, Session-only memory:privacy_protection, Session-only memory:retention_and_deletion_control, Persistent conversation-log retrieval:retrieval_effectiveness, Persistent conversation-log retrieval:privacy_protection, Persistent conversation-log retrieval:retention_and_deletion_control, Summarized customer-profile memory:privacy_protection, Hybrid layered memory:privacy_protection, Hybrid layered memory:retention_and_deletion_control.",
+    "Unknown (no verified evidence, interval [0,2]): Summarized customer-profile memory:retrieval_effectiveness, Summarized customer-profile memory:retention_and_deletion_control, Hybrid layered memory:retrieval_effectiveness.",
+    "4 extracted candidate(s) were rejected by grounding/verification (see verification_log.jsonl).",
+    "Stopped: budget_exhausted (MAX_RESEARCH_ROUNDS=3 reached)."
+  ],
+  "next_steps": [
+    "Compare retrieval accuracy and failure rates across the approaches on representative support tasks, including whether relevant history is surfaced without stale or irrelevant context.",
+    "Specify retention periods and end-to-end deletion behavior for transcripts, summaries, extracted facts, logs, backups, and caches.",
+    "Validate authorization and tenant isolation for retrieval, updates, exports, deletion, and background processing.",
+    "Test how summarized and hybrid memories are corrected when customer details change or stored context is inaccurate."
+  ],
+  "stop_reason": "budget_exhausted",
+  "status": "partial",
+  "decision_changes": [
+    {
+      "round": 0,
+      "kind": "stability_changed",
+      "before": {
+        "recommended": null,
+        "stability": "undetermined"
+      },
+      "after": {
+        "recommended": "Session-only memory",
+        "stability": "provisional"
+      },
+      "evidence_ids": [
+        "EV_1",
+        "EV_2",
+        "EV_3",
+        "EV_4",
+        "EV_5",
+        "EV_6",
+        "EV_7",
+        "EV_8",
+        "EV_9"
+      ]
+    }
+  ],
+  "decision_flip_count": 0,
+  "status_change_count": 1,
+  "research_budget_spent": {
+    "search_calls": 5,
+    "max_search_calls": 6,
+    "content_pages": 10,
+    "max_content_pages": 12,
+    "research_actions_spent": 15,
+    "llm_calls": 7,
+    "max_llm_calls": null,
+    "elapsed_s": 52.72,
+    "max_seconds": null
+  },
+  "synthetic": false
+}

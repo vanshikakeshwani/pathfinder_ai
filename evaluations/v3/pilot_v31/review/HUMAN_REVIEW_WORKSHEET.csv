@@ -1,0 +1,10 @@
+run_id,qid,repeat,arm,reviewer_initials,review_date,d1_answers_question,d2_covers_requirements,d3_inspectable_sources,d4_excerpts_support_claims,d5_uncertainty_stated,d6_tool_choices_useful,d7_no_fabrication,d8_next_steps_structure,wrongly_accepted_evidence_ids,wrongly_rejected_candidate_ids,recommendation_justified_yes_no_na,notes
+EVAL_Q1_r1_static_20261030T080154_081135,Q1,1,static,,,,,,,,,,,,,,
+EVAL_Q1_r1_adaptive_20261030T080434_2cbd17,Q1,1,adaptive,,,,,,,,,,,,,,
+EVAL_Q1_r1_v2_policy_20261030T080551_d4d51e,Q1,1,v2_policy,,,,,,,,,,,,,,
+EVAL_Q4_r1_static_20261030T080744_d137b5,Q4,1,static,,,,,,,,,,,,,,
+EVAL_Q4_r1_adaptive_20261030T081109_7f7cfd,Q4,1,adaptive,,,,,,,,,,,,,,
+EVAL_Q4_r1_v2_policy_20261030T081235_a424f3,Q4,1,v2_policy,,,,,,,,,,,,,,
+EVAL_Q5_r1_static_20261030T081333_40ca27,Q5,1,static,,,,,,,,,,,,,,
+EVAL_Q5_r1_adaptive_20261030T081701_0ec3c2,Q5,1,adaptive,,,,,,,,,,,,,,
+EVAL_Q5_r1_v2_policy_20261030T081919_4b098e,Q5,1,v2_policy,,,,,,,,,,,,,,

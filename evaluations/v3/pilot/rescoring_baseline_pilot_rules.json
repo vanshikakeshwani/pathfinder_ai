@@ -1,0 +1,1126 @@
+{
+ "Q1_r1_adaptive": {
+  "cells": {
+   "Qdrant:deployment_fit": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   },
+   "Qdrant:filtering_capability": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Qdrant:operational_effort": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "high"
+   },
+   "Weaviate:deployment_fit": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "low"
+   },
+   "Weaviate:filtering_capability": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Weaviate:operational_effort": {
+    "state": "unknown",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [],
+    "independent_sources": 0,
+    "factual_confidence": "n.a."
+   },
+   "Milvus:deployment_fit": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "high"
+   },
+   "Milvus:filtering_capability": {
+    "state": "insufficient",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [],
+    "independent_sources": 0,
+    "factual_confidence": "n.a."
+   },
+   "Milvus:operational_effort": {
+    "state": "scope_dependent",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "high"
+   }
+  },
+  "bounds": {
+   "Qdrant": [
+    19,
+    22
+   ],
+   "Weaviate": [
+    9,
+    22
+   ],
+   "Milvus": [
+    11,
+    22
+   ]
+  },
+  "leader": "Qdrant",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "Qdrant's own score on deployment_fit is disputed (verified scores [1, 2])"
+  ]
+ },
+ "Q1_r1_static": {
+  "cells": {
+   "Qdrant:deployment_fit": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   },
+   "Qdrant:filtering_capability": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Qdrant:operational_effort": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "high"
+   },
+   "Weaviate:deployment_fit": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "low"
+   },
+   "Weaviate:filtering_capability": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "high"
+   },
+   "Weaviate:operational_effort": {
+    "state": "unknown",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [],
+    "independent_sources": 0,
+    "factual_confidence": "n.a."
+   },
+   "Milvus:deployment_fit": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "high"
+   },
+   "Milvus:filtering_capability": {
+    "state": "insufficient",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [],
+    "independent_sources": 0,
+    "factual_confidence": "n.a."
+   },
+   "Milvus:operational_effort": {
+    "state": "scope_dependent",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "high"
+   }
+  },
+  "bounds": {
+   "Qdrant": [
+    19,
+    22
+   ],
+   "Weaviate": [
+    9,
+    22
+   ],
+   "Milvus": [
+    11,
+    22
+   ]
+  },
+  "leader": "Qdrant",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "Qdrant's own score on deployment_fit is disputed (verified scores [1, 2])"
+  ]
+ },
+ "Q1_r1_v2_policy": {
+  "cells": {
+   "Qdrant:deployment_fit": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   },
+   "Qdrant:filtering_capability": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   },
+   "Qdrant:operational_effort": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "high"
+   },
+   "Weaviate:deployment_fit": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "low"
+   },
+   "Weaviate:filtering_capability": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Weaviate:operational_effort": {
+    "state": "insufficient",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [],
+    "independent_sources": 0,
+    "factual_confidence": "n.a."
+   },
+   "Milvus:deployment_fit": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "high"
+   },
+   "Milvus:filtering_capability": {
+    "state": "insufficient",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [],
+    "independent_sources": 0,
+    "factual_confidence": "n.a."
+   },
+   "Milvus:operational_effort": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "high"
+   }
+  },
+  "bounds": {
+   "Qdrant": [
+    11,
+    17
+   ],
+   "Weaviate": [
+    9,
+    22
+   ],
+   "Milvus": [
+    16,
+    22
+   ]
+  },
+  "leader": "Milvus",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "Milvus's advantage on operational_effort rests only on Milvus's own (self-reported) claims"
+  ]
+ },
+ "Q4_r1_adaptive": {
+  "cells": {
+   "Session-only memory:retrieval_effectiveness": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Session-only memory:privacy_protection": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Session-only memory:retention_and_deletion_control": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Persistent conversation-log retrieval:retrieval_effectiveness": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Persistent conversation-log retrieval:privacy_protection": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Persistent conversation-log retrieval:retention_and_deletion_control": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Summarized customer-profile memory:retrieval_effectiveness": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   },
+   "Summarized customer-profile memory:privacy_protection": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Summarized customer-profile memory:retention_and_deletion_control": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Hybrid layered memory:retrieval_effectiveness": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Hybrid layered memory:privacy_protection": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Hybrid layered memory:retention_and_deletion_control": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   }
+  },
+  "bounds": {
+   "Session-only memory": [
+    9,
+    9
+   ],
+   "Persistent conversation-log retrieval": [
+    9,
+    9
+   ],
+   "Summarized customer-profile memory": [
+    9,
+    12
+   ],
+   "Hybrid layered memory": [
+    12,
+    12
+   ]
+  },
+  "leader": "Hybrid layered memory",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "differentiating cells lack strong support (single source or non-official): Hybrid layered memory:retrieval_effectiveness, Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness"
+  ]
+ },
+ "Q4_r1_static": {
+  "cells": {
+   "Session-only memory:retrieval_effectiveness": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Session-only memory:privacy_protection": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Session-only memory:retention_and_deletion_control": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Persistent conversation-log retrieval:retrieval_effectiveness": {
+    "state": "insufficient",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [],
+    "independent_sources": 0,
+    "factual_confidence": "n.a."
+   },
+   "Persistent conversation-log retrieval:privacy_protection": {
+    "state": "disputed",
+    "lower": 0,
+    "upper": 1,
+    "score": null,
+    "observed": [
+     0,
+     1
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   },
+   "Persistent conversation-log retrieval:retention_and_deletion_control": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Summarized customer-profile memory:retrieval_effectiveness": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Summarized customer-profile memory:privacy_protection": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Summarized customer-profile memory:retention_and_deletion_control": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Hybrid layered memory:retrieval_effectiveness": {
+    "state": "insufficient",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [],
+    "independent_sources": 0,
+    "factual_confidence": "n.a."
+   },
+   "Hybrid layered memory:privacy_protection": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Hybrid layered memory:retention_and_deletion_control": {
+    "state": "unknown",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [],
+    "independent_sources": 0,
+    "factual_confidence": "n.a."
+   }
+  },
+  "bounds": {
+   "Session-only memory": [
+    9,
+    9
+   ],
+   "Persistent conversation-log retrieval": [
+    3,
+    12
+   ],
+   "Summarized customer-profile memory": [
+    12,
+    12
+   ],
+   "Hybrid layered memory": [
+    3,
+    15
+   ]
+  },
+  "leader": "Summarized customer-profile memory",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "differentiating cells lack strong support (single source or non-official): Summarized customer-profile memory:retrieval_effectiveness, Session-only memory:retrieval_effectiveness"
+  ]
+ },
+ "Q4_r1_v2_policy": {
+  "cells": {
+   "Session-only memory:retrieval_effectiveness": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Session-only memory:privacy_protection": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Session-only memory:retention_and_deletion_control": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Persistent conversation-log retrieval:retrieval_effectiveness": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Persistent conversation-log retrieval:privacy_protection": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Persistent conversation-log retrieval:retention_and_deletion_control": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Summarized customer-profile memory:retrieval_effectiveness": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   },
+   "Summarized customer-profile memory:privacy_protection": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Summarized customer-profile memory:retention_and_deletion_control": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Hybrid layered memory:retrieval_effectiveness": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Hybrid layered memory:privacy_protection": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Hybrid layered memory:retention_and_deletion_control": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   }
+  },
+  "bounds": {
+   "Session-only memory": [
+    9,
+    9
+   ],
+   "Persistent conversation-log retrieval": [
+    9,
+    9
+   ],
+   "Summarized customer-profile memory": [
+    9,
+    12
+   ],
+   "Hybrid layered memory": [
+    12,
+    12
+   ]
+  },
+  "leader": "Hybrid layered memory",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "differentiating cells lack strong support (single source or non-official): Hybrid layered memory:retrieval_effectiveness, Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness"
+  ]
+ },
+ "Q5_r1_adaptive": {
+  "cells": {
+   "Managed vector database:operational_effort": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 5,
+    "factual_confidence": "low"
+   },
+   "Managed vector database:startup_cost": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Managed vector database:control_and_customization": {
+    "state": "disputed",
+    "lower": 0,
+    "upper": 1,
+    "score": null,
+    "observed": [
+     0,
+     1
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   },
+   "Self-hosted vector database:operational_effort": {
+    "state": "disputed",
+    "lower": 0,
+    "upper": 1,
+    "score": null,
+    "observed": [
+     0,
+     1
+    ],
+    "independent_sources": 4,
+    "factual_confidence": "low"
+   },
+   "Self-hosted vector database:startup_cost": {
+    "state": "disputed",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     0,
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   },
+   "Self-hosted vector database:control_and_customization": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   }
+  },
+  "bounds": {
+   "Managed vector database": [
+    11,
+    19
+   ],
+   "Self-hosted vector database": [
+    3,
+    17
+   ]
+  },
+  "leader": "Managed vector database",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "Managed vector database's own score on operational_effort is disputed (verified scores [1, 2])",
+   "Managed vector database's own score on control_and_customization is disputed (verified scores [0, 1])"
+  ]
+ },
+ "Q5_r1_static": {
+  "cells": {
+   "Managed vector database:operational_effort": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 4,
+    "factual_confidence": "high"
+   },
+   "Managed vector database:startup_cost": {
+    "state": "disputed",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     0,
+     2
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   },
+   "Managed vector database:control_and_customization": {
+    "state": "disputed",
+    "lower": 0,
+    "upper": 1,
+    "score": null,
+    "observed": [
+     0,
+     1
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "low"
+   },
+   "Self-hosted vector database:operational_effort": {
+    "state": "disputed",
+    "lower": 0,
+    "upper": 1,
+    "score": null,
+    "observed": [
+     0,
+     1
+    ],
+    "independent_sources": 4,
+    "factual_confidence": "low"
+   },
+   "Self-hosted vector database:startup_cost": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 1,
+    "factual_confidence": "moderate"
+   },
+   "Self-hosted vector database:control_and_customization": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 3,
+    "factual_confidence": "high"
+   }
+  },
+  "bounds": {
+   "Managed vector database": [
+    10,
+    19
+   ],
+   "Self-hosted vector database": [
+    12,
+    17
+   ]
+  },
+  "leader": "Managed vector database",
+  "stability": "undetermined",
+  "recommendation": "none",
+  "reasons": [
+   "no unique interval leader"
+  ]
+ },
+ "Q5_r1_v2_policy": {
+  "cells": {
+   "Managed vector database:operational_effort": {
+    "state": "supported",
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "observed": [
+     2
+    ],
+    "independent_sources": 4,
+    "factual_confidence": "high"
+   },
+   "Managed vector database:startup_cost": {
+    "state": "disputed",
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     0,
+     1,
+     2
+    ],
+    "independent_sources": 3,
+    "factual_confidence": "low"
+   },
+   "Managed vector database:control_and_customization": {
+    "state": "disputed",
+    "lower": 0,
+    "upper": 1,
+    "score": null,
+    "observed": [
+     0,
+     1
+    ],
+    "independent_sources": 3,
+    "factual_confidence": "low"
+   },
+   "Self-hosted vector database:operational_effort": {
+    "state": "disputed",
+    "lower": 0,
+    "upper": 1,
+    "score": null,
+    "observed": [
+     0,
+     1
+    ],
+    "independent_sources": 4,
+    "factual_confidence": "low"
+   },
+   "Self-hosted vector database:startup_cost": {
+    "state": "supported",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "observed": [
+     1
+    ],
+    "independent_sources": 2,
+    "factual_confidence": "high"
+   },
+   "Self-hosted vector database:control_and_customization": {
+    "state": "disputed",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "observed": [
+     1,
+     2
+    ],
+    "independent_sources": 3,
+    "factual_confidence": "low"
+   }
+  },
+  "bounds": {
+   "Managed vector database": [
+    10,
+    19
+   ],
+   "Self-hosted vector database": [
+    6,
+    14
+   ]
+  },
+  "leader": "Managed vector database",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "Managed vector database's own score on startup_cost is disputed (verified scores [0, 1, 2])",
+   "Managed vector database's own score on control_and_customization is disputed (verified scores [0, 1])"
+  ]
+ }
+}

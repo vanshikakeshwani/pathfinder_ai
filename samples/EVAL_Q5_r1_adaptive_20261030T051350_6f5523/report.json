@@ -1,0 +1,125 @@
+{
+  "run_id": "EVAL_Q5_r1_adaptive_20261030T051350_6f5523",
+  "question": "Choose between managed and self-hosted vector databases for a startup with one backend engineer and limited operations time.",
+  "mode": "comparison",
+  "short_answer": "Recommendation: Managed vector database. It is interval-robust under the disclosed criteria and weights (score intervals: Managed vector database [13,19], Self-hosted vector database [9,9]), and the evidence on the differentiating criteria is comparable and well supported. For a one-engineer startup with limited operations time, the practical tradeoff is less infrastructure work versus greater control and potentially lower direct hosting costs. The main remaining uncertainty is how the options compare for the startup’s actual workload and requirements.",
+  "findings": [
+    {
+      "text": "Managed services handle much of the infrastructure and maintenance, while self-hosting leaves the team responsible for deployment, scaling, monitoring, backups, upgrades, security, and incident response—an especially relevant burden for a small team.",
+      "evidence_ids": [
+        "EV_1",
+        "EV_4"
+      ]
+    },
+    {
+      "text": "Self-hosting offers more control over deployment and configuration, while managed services can limit some infrastructure and data-handling choices. The cited cost examples are about $280/month for one managed workload and $120/month for one self-hosted cluster, so they should not be treated as a general cost comparison.",
+      "evidence_ids": [
+        "EV_3",
+        "EV_5",
+        "EV_7",
+        "EV_8",
+        "EV_10"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC_2",
+      "url": "https://theaidatabaseblog.com/learn/self-hosted-vs-managed-vector-databases/",
+      "title": "Self-Hosted vs Managed Vector Databases — The AI Database Blog",
+      "domain": "theaidatabaseblog.com",
+      "retrieved_at": "2026-10-30T05:13:50+00:00",
+      "published_at": "2026-06-04T17:46:32.000Z"
+    },
+    {
+      "source_id": "SRC_5",
+      "url": "https://www.devopsness.com/blog/vector-database-selection-pinecone-pgvector-qdrant-after-6-months-in-production-2026-04-14",
+      "title": "Vector Database Selection: Pinecone, pgvector, Qdrant After",
+      "domain": "devopsness.com",
+      "retrieved_at": "2026-10-30T05:13:52+00:00",
+      "published_at": "2026-04-14T12:00:00.000Z"
+    },
+    {
+      "source_id": "SRC_6",
+      "url": "https://yigtwxx.github.io/awesome-rag-production/vector-database-comparison/",
+      "title": "Vector Database Comparison - Awesome RAG Production",
+      "domain": "github.io",
+      "retrieved_at": "2026-10-30T05:13:52+00:00",
+      "published_at": null
+    }
+  ],
+  "confidence": "low",
+  "confidence_rule": "confidence = min(interval stability, lowest factual confidence among the leader's supported/disputed cells); robust/high=high, provisional/moderate=moderate, otherwise low. A withheld recommendation caps confidence at moderate, and at low when the withholding is due to non-comparable evidence.",
+  "factual_confidence": "low",
+  "decision_stability": "robust",
+  "recommended": "Managed vector database",
+  "interval_leader": "Managed vector database",
+  "recommendation_status": "ready",
+  "recommendation_withheld_reasons": [],
+  "comparability_issues": [],
+  "single_source_cells": [
+    "Self-hosted vector database:startup_cost",
+    "Self-hosted vector database:control_and_customization"
+  ],
+  "requirement_coverage": {
+    "supported": 5,
+    "total": 6
+  },
+  "assumptions": [
+    "The startup expects to use a vector database in a production application, not only for a short-lived experiment.",
+    "No specific workload size, latency target, compliance requirement, cloud provider, or budget was provided.",
+    "The comparison should consider general managed and self-hosted approaches rather than specific database products.",
+    "No stated priority for startup_cost, control_and_customization: equal default weight 3."
+  ],
+  "limitations": [
+    "Fit scores (0/1/2) are model-assisted assessments under the disclosed rubric and weights, not measurements.",
+    "Support verification uses the same model family as extraction; it is not ground truth and needs human audit.",
+    "'Robust' means interval dominance under the chosen criteria and weights, not that the option is factually best.",
+    "Single-source support (one independent source): Self-hosted vector database:startup_cost, Self-hosted vector database:control_and_customization.",
+    "Disputed (conflicting verified evidence, interval [0,2]): Managed vector database:control_and_customization.",
+    "Pricing/plan terms change often; values reflect the retrieval date of each source.",
+    "2 extracted candidate(s) were rejected by grounding/verification (see verification_log.jsonl)."
+  ],
+  "next_steps": [
+    "Estimate total monthly cost for both options using the startup’s expected data volume, query load, redundancy, and growth.",
+    "Confirm whether managed-service data placement and configuration limits meet the startup’s security and product requirements.",
+    "Validate self-hosting effort with a small deployment, including sizing, backups, upgrades, and incident-response coverage."
+  ],
+  "stop_reason": "stable",
+  "status": "complete",
+  "decision_changes": [
+    {
+      "round": 0,
+      "kind": "became_robust",
+      "before": {
+        "recommended": null,
+        "stability": "undetermined"
+      },
+      "after": {
+        "recommended": "Managed vector database",
+        "stability": "robust"
+      },
+      "evidence_ids": [
+        "EV_1",
+        "EV_2",
+        "EV_3",
+        "EV_4",
+        "EV_5"
+      ]
+    }
+  ],
+  "decision_flip_count": 0,
+  "status_change_count": 1,
+  "research_budget_spent": {
+    "search_calls": 3,
+    "max_search_calls": 6,
+    "content_pages": 6,
+    "max_content_pages": 12,
+    "research_actions_spent": 9,
+    "llm_calls": 5,
+    "max_llm_calls": null,
+    "elapsed_s": 56.22,
+    "max_seconds": null
+  },
+  "synthetic": false
+}

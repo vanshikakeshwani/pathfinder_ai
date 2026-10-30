@@ -1,0 +1,229 @@
+{
+  "tools": [
+    {
+      "tool": "exa_search",
+      "detail": "managed vs self-hosted vector databases operational effort startup",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_search",
+      "detail": "self-hosted vs managed vector database control maintenance tradeoffs",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_get_contents",
+      "detail": "https://agintex.com/blog/vector-database-for-saas-self-hosted-vs.-managed-for-founders https://theaidatabaseblog.com/learn/self-hosted-vs-managed-vector-databases/ https://developers.databricks.com/perspectives/what-s-the-difference-between-a-fully-managed-vector-search-service-and-a-self-hosted-pgv",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.004
+    },
+    {
+      "tool": "exa_search",
+      "detail": "Managed vector database operational effort independent review comparison",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 1992.4,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_get_contents",
+      "detail": "https://www.devopsness.com/blog/vector-database-selection-pinecone-pgvector-qdrant-after-6-months-in-production-2026-04-14 https://yigtwxx.github.io/awesome-rag-production/vector-database-comparison/",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 414.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.002
+    }
+  ],
+  "llm": [
+    {
+      "task": "extract",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.3,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 2289,
+        "prompt_tokens": 8777,
+        "total_tokens": 11066,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 1324,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 8774,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "verify",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.2,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 1005,
+        "prompt_tokens": 3721,
+        "total_tokens": 4726,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 487,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 3718,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "extract",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 32311.9,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 2965,
+        "prompt_tokens": 5770,
+        "total_tokens": 8735,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 2144,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 5767,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "verify",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 15849.5,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 1442,
+        "prompt_tokens": 3760,
+        "total_tokens": 5202,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 886,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 3757,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "report",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 5639.3,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 453,
+        "prompt_tokens": 1459,
+        "total_tokens": 1912,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 172,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 1456,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    }
+  ],
+  "llm_model": "gpt-6-luna (record)",
+  "budget": {
+    "search_calls": 3,
+    "max_search_calls": 6,
+    "content_pages": 6,
+    "max_content_pages": 12,
+    "research_actions_spent": 9,
+    "llm_calls": 5,
+    "max_llm_calls": null,
+    "elapsed_s": 56.23,
+    "max_seconds": null
+  },
+  "queries": [
+    "managed vs self-hosted vector databases operational effort startup",
+    "self-hosted vs managed vector database control maintenance tradeoffs",
+    "Managed vector database operational effort independent review comparison"
+  ],
+  "strategy": "adaptive"
+}

@@ -1,0 +1,1081 @@
+{
+ "Q1_r1_adaptive": {
+  "cells": {
+   "Qdrant:deployment_fit": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Qdrant:filtering_capability": {
+    "state": "disputed",
+    "kind": "independent_disagreement",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "low",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Qdrant:operational_effort": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Weaviate:deployment_fit": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Weaviate:filtering_capability": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Weaviate:operational_effort": {
+    "state": "insufficient",
+    "kind": null,
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "n.a.",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Milvus:deployment_fit": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Milvus:filtering_capability": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Milvus:operational_effort": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   }
+  },
+  "evidence_dimensions": {},
+  "bounds": {
+   "Qdrant": [
+    14,
+    17
+   ],
+   "Weaviate": [
+    9,
+    19
+   ],
+   "Milvus": [
+    14,
+    14
+   ]
+  },
+  "leader": "Qdrant",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "Qdrant's advantage on deployment_fit rests only on Qdrant's own (self-reported) claims",
+   "Qdrant's own score on filtering_capability is disputed (verified scores [1, 2])"
+  ]
+ },
+ "Q1_r1_static": {
+  "cells": {
+   "Qdrant:deployment_fit": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Qdrant:filtering_capability": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Qdrant:operational_effort": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Weaviate:deployment_fit": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Weaviate:filtering_capability": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Weaviate:operational_effort": {
+    "state": "unknown",
+    "kind": null,
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "n.a.",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Milvus:deployment_fit": {
+    "state": "insufficient",
+    "kind": null,
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "n.a.",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Milvus:filtering_capability": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Milvus:operational_effort": {
+    "state": "insufficient",
+    "kind": null,
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "n.a.",
+    "dimension_mismatch": false,
+    "dimensions": []
+   }
+  },
+  "evidence_dimensions": {},
+  "bounds": {
+   "Qdrant": [
+    22,
+    22
+   ],
+   "Weaviate": [
+    9,
+    19
+   ],
+   "Milvus": [
+    3,
+    19
+   ]
+  },
+  "leader": "Qdrant",
+  "stability": "robust",
+  "recommendation": "withheld",
+  "reasons": [
+   "differentiating cells lack strong support (single source or non-official): Qdrant:filtering_capability, Milvus:filtering_capability",
+   "Qdrant's advantage on deployment_fit rests only on Qdrant's own (self-reported) claims"
+  ]
+ },
+ "Q1_r1_v2_policy": {
+  "cells": {
+   "Qdrant:deployment_fit": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Qdrant:filtering_capability": {
+    "state": "disputed",
+    "kind": "independent_disagreement",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "low",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Qdrant:operational_effort": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Weaviate:deployment_fit": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Weaviate:filtering_capability": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Weaviate:operational_effort": {
+    "state": "insufficient",
+    "kind": null,
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "n.a.",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Milvus:deployment_fit": {
+    "state": "disputed",
+    "kind": "source_inconsistent",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "low",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Milvus:filtering_capability": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Milvus:operational_effort": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   }
+  },
+  "evidence_dimensions": {},
+  "bounds": {
+   "Qdrant": [
+    11,
+    14
+   ],
+   "Weaviate": [
+    9,
+    19
+   ],
+   "Milvus": [
+    11,
+    14
+   ]
+  },
+  "leader": "Weaviate",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "differentiating cells lack strong support (single source or non-official): Weaviate:filtering_capability, Milvus:filtering_capability",
+   "critical criterion operational_effort (weight 5) has no supported score for Weaviate"
+  ]
+ },
+ "Q4_r1_adaptive": {
+  "cells": {
+   "Session-only memory:retrieval_effectiveness": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Session-only memory:privacy_protection": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Session-only memory:retention_and_deletion_control": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Persistent conversation-log retrieval:retrieval_effectiveness": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Persistent conversation-log retrieval:privacy_protection": {
+    "state": "supported",
+    "kind": null,
+    "lower": 0,
+    "upper": 0,
+    "score": 0,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Persistent conversation-log retrieval:retention_and_deletion_control": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Summarized customer-profile memory:retrieval_effectiveness": {
+    "state": "consensus",
+    "kind": "weak",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Summarized customer-profile memory:privacy_protection": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Summarized customer-profile memory:retention_and_deletion_control": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Hybrid layered memory:retrieval_effectiveness": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Hybrid layered memory:privacy_protection": {
+    "state": "insufficient",
+    "kind": null,
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "n.a.",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Hybrid layered memory:retention_and_deletion_control": {
+    "state": "insufficient",
+    "kind": null,
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "n.a.",
+    "dimension_mismatch": false,
+    "dimensions": []
+   }
+  },
+  "evidence_dimensions": {},
+  "bounds": {
+   "Session-only memory": [
+    12,
+    12
+   ],
+   "Persistent conversation-log retrieval": [
+    6,
+    6
+   ],
+   "Summarized customer-profile memory": [
+    9,
+    9
+   ],
+   "Hybrid layered memory": [
+    3,
+    15
+   ]
+  },
+  "leader": "Session-only memory",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "differentiating cells lack strong support (single source or non-official): Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness, Session-only memory:privacy_protection, Persistent conversation-log retrieval:privacy_protection",
+   "Summarized customer-profile memory:retrieval_effectiveness rests on a weak qualified consensus (dissent disclosed; needs more independent agreement)"
+  ]
+ },
+ "Q4_r1_static": {
+  "cells": {
+   "Session-only memory:retrieval_effectiveness": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Session-only memory:privacy_protection": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Session-only memory:retention_and_deletion_control": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Persistent conversation-log retrieval:retrieval_effectiveness": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Persistent conversation-log retrieval:privacy_protection": {
+    "state": "supported",
+    "kind": null,
+    "lower": 0,
+    "upper": 0,
+    "score": 0,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Persistent conversation-log retrieval:retention_and_deletion_control": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Summarized customer-profile memory:retrieval_effectiveness": {
+    "state": "disputed",
+    "kind": "independent_disagreement",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "low",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Summarized customer-profile memory:privacy_protection": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Summarized customer-profile memory:retention_and_deletion_control": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Hybrid layered memory:retrieval_effectiveness": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Hybrid layered memory:privacy_protection": {
+    "state": "insufficient",
+    "kind": null,
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "n.a.",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Hybrid layered memory:retention_and_deletion_control": {
+    "state": "unknown",
+    "kind": null,
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "n.a.",
+    "dimension_mismatch": false,
+    "dimensions": []
+   }
+  },
+  "evidence_dimensions": {},
+  "bounds": {
+   "Session-only memory": [
+    12,
+    12
+   ],
+   "Persistent conversation-log retrieval": [
+    6,
+    6
+   ],
+   "Summarized customer-profile memory": [
+    9,
+    12
+   ],
+   "Hybrid layered memory": [
+    3,
+    15
+   ]
+  },
+  "leader": "Session-only memory",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "differentiating cells lack strong support (single source or non-official): Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness, Hybrid layered memory:retrieval_effectiveness, Session-only memory:privacy_protection"
+  ]
+ },
+ "Q4_r1_v2_policy": {
+  "cells": {
+   "Session-only memory:retrieval_effectiveness": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Session-only memory:privacy_protection": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Session-only memory:retention_and_deletion_control": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Persistent conversation-log retrieval:retrieval_effectiveness": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Persistent conversation-log retrieval:privacy_protection": {
+    "state": "supported",
+    "kind": null,
+    "lower": 0,
+    "upper": 0,
+    "score": 0,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Persistent conversation-log retrieval:retention_and_deletion_control": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Summarized customer-profile memory:retrieval_effectiveness": {
+    "state": "disputed",
+    "kind": "independent_disagreement",
+    "lower": 1,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "low",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Summarized customer-profile memory:privacy_protection": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Summarized customer-profile memory:retention_and_deletion_control": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Hybrid layered memory:retrieval_effectiveness": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Hybrid layered memory:privacy_protection": {
+    "state": "insufficient",
+    "kind": null,
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "n.a.",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Hybrid layered memory:retention_and_deletion_control": {
+    "state": "insufficient",
+    "kind": null,
+    "lower": 0,
+    "upper": 2,
+    "score": null,
+    "factual_confidence": "n.a.",
+    "dimension_mismatch": false,
+    "dimensions": []
+   }
+  },
+  "evidence_dimensions": {},
+  "bounds": {
+   "Session-only memory": [
+    12,
+    12
+   ],
+   "Persistent conversation-log retrieval": [
+    6,
+    6
+   ],
+   "Summarized customer-profile memory": [
+    9,
+    12
+   ],
+   "Hybrid layered memory": [
+    3,
+    15
+   ]
+  },
+  "leader": "Session-only memory",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "differentiating cells lack strong support (single source or non-official): Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness, Hybrid layered memory:retrieval_effectiveness, Session-only memory:privacy_protection, Persistent conversation-log retrieval:privacy_protection"
+  ]
+ },
+ "Q5_r1_adaptive": {
+  "cells": {
+   "Managed vector database:operational_effort": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Managed vector database:startup_cost": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": [
+     "engineering_labour"
+    ]
+   },
+   "Managed vector database:control_and_customization": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Self-hosted vector database:operational_effort": {
+    "state": "supported",
+    "kind": null,
+    "lower": 0,
+    "upper": 0,
+    "score": 0,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Self-hosted vector database:startup_cost": {
+    "state": "disputed",
+    "kind": "independent_disagreement",
+    "lower": 0,
+    "upper": 1,
+    "score": null,
+    "factual_confidence": "low",
+    "dimension_mismatch": true,
+    "dimensions": [
+     "engineering_labour",
+     "recurring_infrastructure"
+    ]
+   },
+   "Self-hosted vector database:control_and_customization": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   }
+  },
+  "evidence_dimensions": {
+   "EV_4": "engineering_labour",
+   "EV_8": "engineering_labour",
+   "EV_9": "engineering_labour",
+   "EV_13": "recurring_infrastructure",
+   "EV_14": "recurring_infrastructure"
+  },
+  "bounds": {
+   "Managed vector database": [
+    16,
+    16
+   ],
+   "Self-hosted vector database": [
+    6,
+    9
+   ]
+  },
+  "leader": "Managed vector database",
+  "stability": "robust",
+  "recommendation": "withheld",
+  "reasons": [
+   "differentiating cells lack strong support (single source or non-official): Self-hosted vector database:control_and_customization"
+  ]
+ },
+ "Q5_r1_static": {
+  "cells": {
+   "Managed vector database:operational_effort": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Managed vector database:startup_cost": {
+    "state": "consensus",
+    "kind": "weak",
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": [
+     "recurring_infrastructure"
+    ]
+   },
+   "Managed vector database:control_and_customization": {
+    "state": "disputed",
+    "kind": "independent_disagreement",
+    "lower": 0,
+    "upper": 1,
+    "score": null,
+    "factual_confidence": "low",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Self-hosted vector database:operational_effort": {
+    "state": "disputed",
+    "kind": "independent_disagreement",
+    "lower": 0,
+    "upper": 1,
+    "score": null,
+    "factual_confidence": "low",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Self-hosted vector database:startup_cost": {
+    "state": "scope_dependent",
+    "kind": "dimension_mismatch",
+    "lower": 0,
+    "upper": 1,
+    "score": null,
+    "factual_confidence": "high",
+    "dimension_mismatch": true,
+    "dimensions": [
+     "engineering_labour",
+     "recurring_infrastructure"
+    ]
+   },
+   "Self-hosted vector database:control_and_customization": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   }
+  },
+  "evidence_dimensions": {
+   "EV_4": "engineering_labour",
+   "EV_7": null,
+   "EV_12": "recurring_infrastructure",
+   "EV_14": "recurring_infrastructure",
+   "EV_16": "recurring_infrastructure",
+   "EV_19": "engineering_labour"
+  },
+  "bounds": {
+   "Managed vector database": [
+    13,
+    16
+   ],
+   "Self-hosted vector database": [
+    6,
+    14
+   ]
+  },
+  "leader": "Managed vector database",
+  "stability": "provisional",
+  "recommendation": "withheld",
+  "reasons": [
+   "score intervals overlap (provisional leader only)",
+   "Managed vector database's own score on control_and_customization is disputed (verified scores [0, 1])"
+  ]
+ },
+ "Q5_r1_v2_policy": {
+  "cells": {
+   "Managed vector database:operational_effort": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Managed vector database:startup_cost": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": [
+     "engineering_labour",
+     "recurring_infrastructure"
+    ]
+   },
+   "Managed vector database:control_and_customization": {
+    "state": "supported",
+    "kind": null,
+    "lower": 1,
+    "upper": 1,
+    "score": 1,
+    "factual_confidence": "high",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Self-hosted vector database:operational_effort": {
+    "state": "consensus",
+    "kind": "weak",
+    "lower": 0,
+    "upper": 0,
+    "score": 0,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   },
+   "Self-hosted vector database:startup_cost": {
+    "state": "supported",
+    "kind": null,
+    "lower": 0,
+    "upper": 0,
+    "score": 0,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": [
+     "engineering_labour"
+    ]
+   },
+   "Self-hosted vector database:control_and_customization": {
+    "state": "supported",
+    "kind": null,
+    "lower": 2,
+    "upper": 2,
+    "score": 2,
+    "factual_confidence": "moderate",
+    "dimension_mismatch": false,
+    "dimensions": []
+   }
+  },
+  "evidence_dimensions": {
+   "EV_4": "engineering_labour",
+   "EV_8": "engineering_labour",
+   "EV_9": "engineering_labour",
+   "EV_14": "recurring_infrastructure"
+  },
+  "bounds": {
+   "Managed vector database": [
+    16,
+    16
+   ],
+   "Self-hosted vector database": [
+    6,
+    6
+   ]
+  },
+  "leader": "Managed vector database",
+  "stability": "robust",
+  "recommendation": "withheld",
+  "reasons": [
+   "differentiating cells lack strong support (single source or non-official): Managed vector database:startup_cost, Self-hosted vector database:startup_cost, Self-hosted vector database:control_and_customization",
+   "Self-hosted vector database:operational_effort rests on a weak qualified consensus (dissent disclosed; needs more independent agreement)"
+  ]
+ }
+}

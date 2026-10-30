@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pathfinder-ai"
+version = "3.2.0"
+description = "Decision-Flip adaptive research agent (CLI, single LangGraph agent)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=1.2,<2",
+    "pydantic>=2.10,<3",
+    "openai>=3.0,<4",
+    "httpx>=0.28,<1",
+    "exa-py>=2.26,<3",
+    "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9,<10", "ruff>=0.17,<1"]
+
+[project.scripts]
+pathfinder = "pathfinder.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pathfinder*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["live: needs real API keys and network (skipped in CI)"]
+addopts = "-m 'not live'"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+extend-exclude = ["evaluations/v2/code_snapshot", "evaluations/v3/pilot/code_snapshot", "evaluations/v3/benchmark_v32/code_snapshot",
+                  "evaluations/v3/pilot_v31/code_snapshot"]  # frozen historical code, kept byte-identical
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+ignore = ["E501"]

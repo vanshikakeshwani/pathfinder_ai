@@ -1,0 +1,104 @@
+{
+  "run_id": "EVAL_Q5_adaptive_r1_20261029T230539_8ca8e4",
+  "question": "Choose between managed and self-hosted vector databases for a startup with one backend engineer and limited operations time.",
+  "mode": "comparison",
+  "short_answer": "Managed vector databases leads provisionally, but score intervals overlap (Managed vector databases [11,27], Self-hosted vector databases [6,20]); current evidence does not force a unique recommendation. Limited operations capacity favors managed services because they reduce infrastructure work and allow the engineer to focus on application and retrieval tasks. The main gap is whether managed-service cost, constraints, and required control fit the startup’s specific workload and requirements.",
+  "findings": [
+    {
+      "text": "Managed services simplify setup and reduce infrastructure maintenance, which aligns with a startup that has only one backend engineer and limited operations time.",
+      "evidence_ids": [
+        "EV_2"
+      ]
+    },
+    {
+      "text": "Self-hosting offers greater control over infrastructure and configuration, but shifts deployment, scaling, monitoring, backups, upgrades, security, and incident response to the team.",
+      "evidence_ids": [
+        "EV_3",
+        "EV_4"
+      ]
+    },
+    {
+      "text": "Managed platforms provide configuration and security options, though they retain provider dependency and constraints compared with self-hosting.",
+      "evidence_ids": [
+        "EV_1"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC_2",
+      "url": "https://agintex.com/blog/vector-database-for-saas-self-hosted-vs.-managed-for-founders",
+      "title": "Vector Database for SaaS: Self-Hosted vs. Managed for Founders",
+      "domain": "agintex.com",
+      "retrieved_at": "2026-10-29T23:05:39+00:00",
+      "published_at": null
+    },
+    {
+      "source_id": "SRC_7",
+      "url": "https://theaidatabaseblog.com/learn/self-hosted-vs-managed-vector-databases/",
+      "title": "Self-Hosted vs Managed Vector Databases — The AI Database Blog",
+      "domain": "theaidatabaseblog.com",
+      "retrieved_at": "2026-10-29T23:05:42+00:00",
+      "published_at": "2026-06-04T17:46:32.000Z"
+    }
+  ],
+  "confidence": "moderate",
+  "confidence_rule": "confidence = min(decision stability, lowest factual confidence among the recommended option's supported/disputed cells); robust/high=high, provisional/moderate=moderate, otherwise low.",
+  "factual_confidence": "moderate",
+  "decision_stability": "provisional",
+  "recommended": "Managed vector databases",
+  "assumptions": [
+    "The startup is choosing an operating model rather than selecting a particular vector database product.",
+    "Limited operations time is the primary stated constraint; no workload size, availability target, data residency requirement, or budget was specified.",
+    "The comparison should consider general tradeoffs and avoid assuming a particular cloud provider, deployment environment, or technology stack.",
+    "No stated priority for operational_resilience, control_and_customization: equal default weight 3."
+  ],
+  "limitations": [
+    "Fit scores (0/1/2) are model-assisted assessments under the disclosed rubric and weights, not measurements.",
+    "Support verification uses the same model family as extraction; it is not ground truth and needs human audit.",
+    "'Robust' means interval dominance under the chosen criteria and weights, not that the option is factually best.",
+    "Unknown (no verified evidence, interval [0,2]): Managed vector databases:operations_effort, Managed vector databases:operational_resilience, Self-hosted vector databases:engineering_effort, Self-hosted vector databases:operational_resilience.",
+    "25 extracted candidate(s) were rejected by grounding/verification (see verification_log.jsonl).",
+    "Stopped: budget_exhausted (MAX_RESEARCH_ROUNDS=3 reached)."
+  ],
+  "next_steps": [
+    "Estimate total cost for the expected workload under managed and self-hosted options, including growth and support needs.",
+    "Identify any non-negotiable requirements for data placement, security, configuration, or portability, then validate them with candidate providers and deployment options.",
+    "Run a representative workload test to compare retrieval performance, operational effort, and scaling behavior."
+  ],
+  "stop_reason": "budget_exhausted",
+  "status": "partial",
+  "decision_changes": [
+    {
+      "round": 2,
+      "kind": "stability_changed",
+      "before": {
+        "recommended": "Managed vector databases",
+        "stability": "undetermined"
+      },
+      "after": {
+        "recommended": "Managed vector databases",
+        "stability": "provisional"
+      },
+      "evidence_ids": [
+        "EV_2",
+        "EV_3",
+        "EV_4"
+      ]
+    }
+  ],
+  "decision_flip_count": 0,
+  "status_change_count": 1,
+  "research_budget_spent": {
+    "search_calls": 5,
+    "max_search_calls": 6,
+    "content_pages": 10,
+    "max_content_pages": 12,
+    "research_actions_spent": 15,
+    "llm_calls": 9,
+    "max_llm_calls": null,
+    "elapsed_s": 75.38,
+    "max_seconds": null
+  },
+  "synthetic": false
+}

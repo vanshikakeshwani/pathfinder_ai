@@ -1,0 +1,62 @@
+{
+  "plan": {
+    "question": "Identify five India-based B2B SaaS companies in HR technology, with evidence for headquarters/market and positioning.",
+    "mode": "discovery",
+    "alternatives": [],
+    "criteria": [],
+    "facets": [
+      {
+        "facet_id": "india_headquarters",
+        "description": "Company is headquartered in India, supported by evidence identifying its headquarters or principal office.",
+        "importance": 5,
+        "required_count": 5,
+        "search_terms": "India headquarters HR technology SaaS"
+      },
+      {
+        "facet_id": "b2b_saas",
+        "description": "Company offers software as a service to business customers, supported by evidence of its product and business-customer market.",
+        "importance": 5,
+        "required_count": 5,
+        "search_terms": "B2B HR SaaS India business customers"
+      },
+      {
+        "facet_id": "hr_technology",
+        "description": "Company\u2019s product or service falls within HR technology, such as HR management, recruiting, payroll, or workforce management.",
+        "importance": 5,
+        "required_count": 5,
+        "search_terms": "India HR tech software platform"
+      },
+      {
+        "facet_id": "market_positioning",
+        "description": "Provide evidence of the company\u2019s market positioning, such as its target customers, core use case, or product differentiation.",
+        "importance": 4,
+        "required_count": 5,
+        "search_terms": "HR SaaS India target customers positioning product"
+      }
+    ],
+    "target_entity_count": 5,
+    "assumptions": [
+      "\u201cIndia-based\u201d means headquartered in India, rather than merely operating or selling in India.",
+      "Companies must offer a SaaS product to business customers; HR consultancies and staffing firms without a qualifying software product are excluded.",
+      "Evidence may come from company websites and credible third-party sources, with headquarters/market and positioning supported separately where possible."
+    ],
+    "initial_queries": [
+      "India headquartered B2B HR SaaS companies HR technology",
+      "India HR technology SaaS companies headquarters products target customers"
+    ],
+    "search_context": "India-based B2B HR technology SaaS companies"
+  },
+  "provenance": {
+    "source_store": "evaluations/snapshots/Q2/b891d16fe6/plan_rep1.json",
+    "source_store_sha256": "8c58743e92b9858c3ed19b4e848f439b47a47a9b416eea7257af58f9993a1a75",
+    "regenerated_with": "pathfinder.planner (unchanged since V2) in replay mode",
+    "plan_hash": "e2dd8eb08eef0c34",
+    "question": "Identify five India-based B2B SaaS companies in HR technology, with evidence for headquarters/market and positioning."
+  },
+  "validation": [
+    "mode is discovery as in queries.json",
+    "4 facets (>= 1)",
+    "target entity count 5",
+    "2 initial queries"
+  ]
+}

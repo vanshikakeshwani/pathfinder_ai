@@ -1,0 +1,335 @@
+{
+  "tools": [
+    {
+      "tool": "exa_search",
+      "detail": "session-only memory vs persistent conversation-log retrieval customer support AI agents retrieval privacy retention",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_search",
+      "detail": "summarized customer-profile memory vs hybrid layered memory customer support agents retrieval privacy retention",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_get_contents",
+      "detail": "https://communicate.so/blog/conversation-memory-support-agent https://www.twilio.com/en-us/blog/insights/token-limits-ai-support-conversations https://www.twilio.com/docs/conversations/memory https://supermemory.ai/blog/ai-memory-customer-support-agents/",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.004
+    },
+    {
+      "tool": "exa_search",
+      "detail": "Hybrid layered memory retention and deletion control trade-offs",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 1412.4,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_get_contents",
+      "detail": "https://arxiv.org/html/2604.16774 https://arxiv.org/html/2512.12856",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 608.2,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.002
+    },
+    {
+      "tool": "exa_search",
+      "detail": "Hybrid layered memory retrieval effectiveness trade-offs",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 2006.9,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_get_contents",
+      "detail": "https://aclanthology.org/2026.sigdial-1.55/ https://aclanthology.org/2026.eacl-long.363/",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 406.8,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.002
+    },
+    {
+      "tool": "exa_search",
+      "detail": "Hybrid layered memory retrieval effectiveness independent review comparison",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 1931.8,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_get_contents",
+      "detail": "https://popoto.io/benchmarks/results/longmemeval_s_hybrid/ https://arxiv.org/html/2504.05324v1",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 415.9,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.002
+    }
+  ],
+  "llm": [
+    {
+      "task": "extract",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.7,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 4248,
+        "prompt_tokens": 11524,
+        "total_tokens": 15772,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 1986,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 11521,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "verify",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.5,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 2503,
+        "prompt_tokens": 6898,
+        "total_tokens": 9401,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 1592,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 6895,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "extract",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 14936.6,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 1528,
+        "prompt_tokens": 8006,
+        "total_tokens": 9534,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 1099,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 8003,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "verify",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 11863.5,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 1049,
+        "prompt_tokens": 1788,
+        "total_tokens": 2837,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 867,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 1785,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "extract",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 5583.8,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 339,
+        "prompt_tokens": 4108,
+        "total_tokens": 4447,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 325,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 4105,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "extract",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 6347.1,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 457,
+        "prompt_tokens": 6864,
+        "total_tokens": 7321,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 443,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 6861,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "report",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 7180.9,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 640,
+        "prompt_tokens": 1763,
+        "total_tokens": 2403,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 156,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 1760,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    }
+  ],
+  "llm_model": "gpt-6-luna (record)",
+  "budget": {
+    "search_calls": 5,
+    "max_search_calls": 6,
+    "content_pages": 10,
+    "max_content_pages": 12,
+    "research_actions_spent": 15,
+    "llm_calls": 7,
+    "max_llm_calls": null,
+    "elapsed_s": 52.74,
+    "max_seconds": null
+  },
+  "queries": [
+    "session-only memory vs persistent conversation-log retrieval customer support AI agents retrieval privacy retention",
+    "summarized customer-profile memory vs hybrid layered memory customer support agents retrieval privacy retention",
+    "Hybrid layered memory retention and deletion control trade-offs",
+    "Hybrid layered memory retrieval effectiveness trade-offs",
+    "Hybrid layered memory retrieval effectiveness independent review comparison"
+  ],
+  "strategy": "adaptive"
+}

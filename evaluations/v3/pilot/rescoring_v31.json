@@ -1,0 +1,778 @@
+{
+ "label": "Retrospective offline re-scoring of V3 pilot evidence - NOT a new controlled live benchmark",
+ "runs": {
+  "Q1_r1_adaptive": {
+   "old": {
+    "supported": 5,
+    "leader": "Qdrant",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Qdrant": [
+      19,
+      22
+     ],
+     "Weaviate": [
+      9,
+      22
+     ],
+     "Milvus": [
+      11,
+      22
+     ]
+    },
+    "disputed": 2
+   },
+   "new": {
+    "supported": 5,
+    "leader": "Qdrant",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "Qdrant's own score on deployment_fit is disputed (verified scores [1, 2])"
+    ],
+    "bounds": {
+     "Qdrant": [
+      19,
+      22
+     ],
+     "Weaviate": [
+      9,
+      22
+     ],
+     "Milvus": [
+      11,
+      22
+     ]
+    },
+    "consensus": 0,
+    "disputed": 2
+   },
+   "newly_supported": [],
+   "newly_consensus": [],
+   "still_disputed": [
+    "Qdrant:deployment_fit (independent_disagreement)",
+    "Weaviate:deployment_fit (source_inconsistent)"
+   ],
+   "source_inconsistent": [
+    "Weaviate:deployment_fit"
+   ],
+   "dimension_mismatch": [],
+   "changed_cells": {
+    "Weaviate:deployment_fit": {
+     "old_state": "disputed",
+     "old_interval": [
+      1,
+      2
+     ],
+     "old_observed": [
+      1,
+      2
+     ],
+     "new_state": "disputed",
+     "new_kind": "source_inconsistent",
+     "new_interval": [
+      1,
+      2
+     ],
+     "new_score": null,
+     "families": 1,
+     "certain_families": 1,
+     "dimension_mismatch": false,
+     "factual_confidence": "low",
+     "decision": "not resolved: the only assessment(s) are internally inconsistent source families"
+    }
+   }
+  },
+  "Q1_r1_static": {
+   "old": {
+    "supported": 5,
+    "leader": "Qdrant",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Qdrant": [
+      19,
+      22
+     ],
+     "Weaviate": [
+      9,
+      22
+     ],
+     "Milvus": [
+      11,
+      22
+     ]
+    },
+    "disputed": 2
+   },
+   "new": {
+    "supported": 5,
+    "leader": "Qdrant",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "Qdrant's own score on deployment_fit is disputed (verified scores [1, 2])"
+    ],
+    "bounds": {
+     "Qdrant": [
+      19,
+      22
+     ],
+     "Weaviate": [
+      9,
+      22
+     ],
+     "Milvus": [
+      11,
+      22
+     ]
+    },
+    "consensus": 0,
+    "disputed": 2
+   },
+   "newly_supported": [],
+   "newly_consensus": [],
+   "still_disputed": [
+    "Qdrant:deployment_fit (independent_disagreement)",
+    "Weaviate:deployment_fit (source_inconsistent)"
+   ],
+   "source_inconsistent": [
+    "Weaviate:deployment_fit"
+   ],
+   "dimension_mismatch": [],
+   "changed_cells": {
+    "Weaviate:deployment_fit": {
+     "old_state": "disputed",
+     "old_interval": [
+      1,
+      2
+     ],
+     "old_observed": [
+      1,
+      2
+     ],
+     "new_state": "disputed",
+     "new_kind": "source_inconsistent",
+     "new_interval": [
+      1,
+      2
+     ],
+     "new_score": null,
+     "families": 1,
+     "certain_families": 1,
+     "dimension_mismatch": false,
+     "factual_confidence": "low",
+     "decision": "not resolved: the only assessment(s) are internally inconsistent source families"
+    }
+   }
+  },
+  "Q1_r1_v2_policy": {
+   "old": {
+    "supported": 4,
+    "leader": "Milvus",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Qdrant": [
+      11,
+      17
+     ],
+     "Weaviate": [
+      9,
+      22
+     ],
+     "Milvus": [
+      16,
+      22
+     ]
+    },
+    "disputed": 3
+   },
+   "new": {
+    "supported": 4,
+    "leader": "Milvus",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "Milvus's advantage on operational_effort rests only on Milvus's own (self-reported) claims"
+    ],
+    "bounds": {
+     "Qdrant": [
+      11,
+      17
+     ],
+     "Weaviate": [
+      9,
+      22
+     ],
+     "Milvus": [
+      16,
+      22
+     ]
+    },
+    "consensus": 0,
+    "disputed": 3
+   },
+   "newly_supported": [],
+   "newly_consensus": [],
+   "still_disputed": [
+    "Qdrant:deployment_fit (independent_disagreement)",
+    "Qdrant:filtering_capability (independent_disagreement)",
+    "Weaviate:deployment_fit (source_inconsistent)"
+   ],
+   "source_inconsistent": [
+    "Weaviate:deployment_fit"
+   ],
+   "dimension_mismatch": [],
+   "changed_cells": {
+    "Weaviate:deployment_fit": {
+     "old_state": "disputed",
+     "old_interval": [
+      1,
+      2
+     ],
+     "old_observed": [
+      1,
+      2
+     ],
+     "new_state": "disputed",
+     "new_kind": "source_inconsistent",
+     "new_interval": [
+      1,
+      2
+     ],
+     "new_score": null,
+     "families": 1,
+     "certain_families": 1,
+     "dimension_mismatch": false,
+     "factual_confidence": "low",
+     "decision": "not resolved: the only assessment(s) are internally inconsistent source families"
+    }
+   }
+  },
+  "Q4_r1_adaptive": {
+   "old": {
+    "supported": 11,
+    "leader": "Hybrid layered memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Session-only memory": [
+      9,
+      9
+     ],
+     "Persistent conversation-log retrieval": [
+      9,
+      9
+     ],
+     "Summarized customer-profile memory": [
+      9,
+      12
+     ],
+     "Hybrid layered memory": [
+      12,
+      12
+     ]
+    },
+    "disputed": 1
+   },
+   "new": {
+    "supported": 11,
+    "leader": "Hybrid layered memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "differentiating cells lack strong support (single source or non-official): Hybrid layered memory:retrieval_effectiveness, Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness"
+    ],
+    "bounds": {
+     "Session-only memory": [
+      9,
+      9
+     ],
+     "Persistent conversation-log retrieval": [
+      9,
+      9
+     ],
+     "Summarized customer-profile memory": [
+      9,
+      12
+     ],
+     "Hybrid layered memory": [
+      12,
+      12
+     ]
+    },
+    "consensus": 0,
+    "disputed": 1
+   },
+   "newly_supported": [],
+   "newly_consensus": [],
+   "still_disputed": [
+    "Summarized customer-profile memory:retrieval_effectiveness (independent_disagreement)"
+   ],
+   "source_inconsistent": [],
+   "dimension_mismatch": [],
+   "changed_cells": {}
+  },
+  "Q4_r1_static": {
+   "old": {
+    "supported": 8,
+    "leader": "Summarized customer-profile memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Session-only memory": [
+      9,
+      9
+     ],
+     "Persistent conversation-log retrieval": [
+      3,
+      12
+     ],
+     "Summarized customer-profile memory": [
+      12,
+      12
+     ],
+     "Hybrid layered memory": [
+      3,
+      15
+     ]
+    },
+    "disputed": 1
+   },
+   "new": {
+    "supported": 8,
+    "leader": "Summarized customer-profile memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "differentiating cells lack strong support (single source or non-official): Summarized customer-profile memory:retrieval_effectiveness, Session-only memory:retrieval_effectiveness"
+    ],
+    "bounds": {
+     "Session-only memory": [
+      9,
+      9
+     ],
+     "Persistent conversation-log retrieval": [
+      3,
+      12
+     ],
+     "Summarized customer-profile memory": [
+      12,
+      12
+     ],
+     "Hybrid layered memory": [
+      3,
+      15
+     ]
+    },
+    "consensus": 0,
+    "disputed": 1
+   },
+   "newly_supported": [],
+   "newly_consensus": [],
+   "still_disputed": [
+    "Persistent conversation-log retrieval:privacy_protection (independent_disagreement)"
+   ],
+   "source_inconsistent": [],
+   "dimension_mismatch": [],
+   "changed_cells": {}
+  },
+  "Q4_r1_v2_policy": {
+   "old": {
+    "supported": 11,
+    "leader": "Hybrid layered memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Session-only memory": [
+      9,
+      9
+     ],
+     "Persistent conversation-log retrieval": [
+      9,
+      9
+     ],
+     "Summarized customer-profile memory": [
+      9,
+      12
+     ],
+     "Hybrid layered memory": [
+      12,
+      12
+     ]
+    },
+    "disputed": 1
+   },
+   "new": {
+    "supported": 11,
+    "leader": "Hybrid layered memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "differentiating cells lack strong support (single source or non-official): Hybrid layered memory:retrieval_effectiveness, Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness"
+    ],
+    "bounds": {
+     "Session-only memory": [
+      9,
+      9
+     ],
+     "Persistent conversation-log retrieval": [
+      9,
+      9
+     ],
+     "Summarized customer-profile memory": [
+      9,
+      12
+     ],
+     "Hybrid layered memory": [
+      12,
+      12
+     ]
+    },
+    "consensus": 0,
+    "disputed": 1
+   },
+   "newly_supported": [],
+   "newly_consensus": [],
+   "still_disputed": [
+    "Summarized customer-profile memory:retrieval_effectiveness (independent_disagreement)"
+   ],
+   "source_inconsistent": [],
+   "dimension_mismatch": [],
+   "changed_cells": {}
+  },
+  "Q5_r1_adaptive": {
+   "old": {
+    "supported": 1,
+    "leader": "Managed vector database",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Managed vector database": [
+      11,
+      19
+     ],
+     "Self-hosted vector database": [
+      3,
+      17
+     ]
+    },
+    "disputed": 5
+   },
+   "new": {
+    "supported": 3,
+    "leader": "Managed vector database",
+    "stability": "robust",
+    "recommendation": "withheld",
+    "reasons": [
+     "Self-hosted vector database:operational_effort rests on a weak qualified consensus (dissent disclosed; needs more independent agreement)",
+     "Managed vector database's own score on control_and_customization is disputed (verified scores [0, 1])"
+    ],
+    "bounds": {
+     "Managed vector database": [
+      16,
+      19
+     ],
+     "Self-hosted vector database": [
+      3,
+      12
+     ]
+    },
+    "consensus": 2,
+    "disputed": 2
+   },
+   "newly_supported": [],
+   "newly_consensus": [
+    "Managed vector database:operational_effort (strong)",
+    "Self-hosted vector database:operational_effort (weak)"
+   ],
+   "still_disputed": [
+    "Managed vector database:control_and_customization (independent_disagreement)",
+    "Self-hosted vector database:control_and_customization (independent_disagreement)"
+   ],
+   "source_inconsistent": [],
+   "dimension_mismatch": [
+    "Self-hosted vector database:startup_cost"
+   ],
+   "changed_cells": {
+    "Managed vector database:operational_effort": {
+     "old_state": "disputed",
+     "old_interval": [
+      1,
+      2
+     ],
+     "old_observed": [
+      1,
+      2
+     ],
+     "new_state": "consensus",
+     "new_kind": "strong",
+     "new_interval": [
+      2,
+      2
+     ],
+     "new_score": 2,
+     "families": 5,
+     "certain_families": 4,
+     "dimension_mismatch": false,
+     "factual_confidence": "high",
+     "decision": "qualified consensus: 4 supporting vs 1 dissenting families (3 with certain independence); dissent retained"
+    },
+    "Self-hosted vector database:operational_effort": {
+     "old_state": "disputed",
+     "old_interval": [
+      0,
+      1
+     ],
+     "old_observed": [
+      0,
+      1
+     ],
+     "new_state": "consensus",
+     "new_kind": "weak",
+     "new_interval": [
+      0,
+      0
+     ],
+     "new_score": 0,
+     "families": 4,
+     "certain_families": 3,
+     "dimension_mismatch": false,
+     "factual_confidence": "moderate",
+     "decision": "qualified consensus: 3 supporting vs 1 dissenting families (2 with certain independence); dissent retained"
+    },
+    "Self-hosted vector database:startup_cost": {
+     "old_state": "disputed",
+     "old_interval": [
+      0,
+      2
+     ],
+     "old_observed": [
+      0,
+      2
+     ],
+     "new_state": "scope_dependent",
+     "new_kind": "dimension_mismatch",
+     "new_interval": [
+      0,
+      2
+     ],
+     "new_score": null,
+     "families": 2,
+     "certain_families": 2,
+     "dimension_mismatch": true,
+     "factual_confidence": "high",
+     "decision": "cost evidence measures different dimensions: engineering_labour=0, recurring_infrastructure=2; not pooled into one score"
+    }
+   }
+  },
+  "Q5_r1_static": {
+   "old": {
+    "supported": 3,
+    "leader": "Managed vector database",
+    "stability": "undetermined",
+    "recommendation": "none",
+    "bounds": {
+     "Managed vector database": [
+      10,
+      19
+     ],
+     "Self-hosted vector database": [
+      12,
+      17
+     ]
+    },
+    "disputed": 3
+   },
+   "new": {
+    "supported": 4,
+    "leader": "Managed vector database",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "Managed vector database's own score on startup_cost is disputed (verified scores [0, 2])",
+     "Managed vector database's own score on control_and_customization is disputed (verified scores [0, 1])"
+    ],
+    "bounds": {
+     "Managed vector database": [
+      10,
+      19
+     ],
+     "Self-hosted vector database": [
+      12,
+      12
+     ]
+    },
+    "consensus": 1,
+    "disputed": 2
+   },
+   "newly_supported": [],
+   "newly_consensus": [
+    "Self-hosted vector database:operational_effort (strong)"
+   ],
+   "still_disputed": [
+    "Managed vector database:startup_cost (independent_disagreement)",
+    "Managed vector database:control_and_customization (independent_disagreement)"
+   ],
+   "source_inconsistent": [],
+   "dimension_mismatch": [],
+   "changed_cells": {
+    "Self-hosted vector database:operational_effort": {
+     "old_state": "disputed",
+     "old_interval": [
+      0,
+      1
+     ],
+     "old_observed": [
+      0,
+      1
+     ],
+     "new_state": "consensus",
+     "new_kind": "strong",
+     "new_interval": [
+      0,
+      0
+     ],
+     "new_score": 0,
+     "families": 4,
+     "certain_families": 4,
+     "dimension_mismatch": false,
+     "factual_confidence": "high",
+     "decision": "qualified consensus: 3 supporting vs 1 dissenting families (3 with certain independence); dissent retained"
+    }
+   }
+  },
+  "Q5_r1_v2_policy": {
+   "old": {
+    "supported": 2,
+    "leader": "Managed vector database",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Managed vector database": [
+      10,
+      19
+     ],
+     "Self-hosted vector database": [
+      6,
+      14
+     ]
+    },
+    "disputed": 4
+   },
+   "new": {
+    "supported": 5,
+    "leader": "Managed vector database",
+    "stability": "robust",
+    "recommendation": "withheld",
+    "reasons": [
+     "Self-hosted vector database:operational_effort rests on a weak qualified consensus (dissent disclosed; needs more independent agreement)",
+     "Managed vector database's own score on startup_cost is disputed (verified scores [0, 1, 2])"
+    ],
+    "bounds": {
+     "Managed vector database": [
+      13,
+      19
+     ],
+     "Self-hosted vector database": [
+      6,
+      6
+     ]
+    },
+    "consensus": 3,
+    "disputed": 1
+   },
+   "newly_supported": [],
+   "newly_consensus": [
+    "Managed vector database:control_and_customization (weak)",
+    "Self-hosted vector database:operational_effort (weak)",
+    "Self-hosted vector database:control_and_customization (weak)"
+   ],
+   "still_disputed": [
+    "Managed vector database:startup_cost (independent_disagreement)"
+   ],
+   "source_inconsistent": [],
+   "dimension_mismatch": [],
+   "changed_cells": {
+    "Managed vector database:control_and_customization": {
+     "old_state": "disputed",
+     "old_interval": [
+      0,
+      1
+     ],
+     "old_observed": [
+      0,
+      1
+     ],
+     "new_state": "consensus",
+     "new_kind": "weak",
+     "new_interval": [
+      1,
+      1
+     ],
+     "new_score": 1,
+     "families": 3,
+     "certain_families": 2,
+     "dimension_mismatch": false,
+     "factual_confidence": "moderate",
+     "decision": "qualified consensus: 2 supporting vs 1 dissenting families (2 with certain independence); dissent retained"
+    },
+    "Self-hosted vector database:operational_effort": {
+     "old_state": "disputed",
+     "old_interval": [
+      0,
+      1
+     ],
+     "old_observed": [
+      0,
+      1
+     ],
+     "new_state": "consensus",
+     "new_kind": "weak",
+     "new_interval": [
+      0,
+      0
+     ],
+     "new_score": 0,
+     "families": 4,
+     "certain_families": 3,
+     "dimension_mismatch": false,
+     "factual_confidence": "moderate",
+     "decision": "qualified consensus: 3 supporting vs 1 dissenting families (2 with certain independence); dissent retained"
+    },
+    "Self-hosted vector database:control_and_customization": {
+     "old_state": "disputed",
+     "old_interval": [
+      1,
+      2
+     ],
+     "old_observed": [
+      1,
+      2
+     ],
+     "new_state": "consensus",
+     "new_kind": "weak",
+     "new_interval": [
+      1,
+      1
+     ],
+     "new_score": 1,
+     "families": 3,
+     "certain_families": 3,
+     "dimension_mismatch": false,
+     "factual_confidence": "moderate",
+     "decision": "qualified consensus: 2 supporting vs 1 dissenting families (2 with certain independence); dissent retained"
+    }
+   }
+  }
+ }
+}

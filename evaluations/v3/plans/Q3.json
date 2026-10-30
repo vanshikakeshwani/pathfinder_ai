@@ -1,0 +1,132 @@
+{
+  "plan": {
+    "question": "Compare single-agent and multi-agent support automation for a 20-person SaaS company, considering complexity, cost, reliability and safeguards.",
+    "mode": "comparison",
+    "alternatives": [
+      {
+        "name": "Single-agent support automation",
+        "aliases": [
+          "single-agent architecture",
+          "single AI support agent"
+        ],
+        "official_domains": [],
+        "kind": "approach",
+        "defining_features": [
+          "One primary agent handles support requests end to end",
+          "May use tools or retrieval, but does not delegate to other autonomous agents",
+          "Centralizes decision-making, orchestration, and safeguards"
+        ]
+      },
+      {
+        "name": "Multi-agent support automation",
+        "aliases": [
+          "multi-agent architecture",
+          "agentic support workflow"
+        ],
+        "official_domains": [],
+        "kind": "approach",
+        "defining_features": [
+          "Multiple specialized agents or roles collaborate or hand off work",
+          "Requires coordination, routing, and shared context between agents",
+          "Enables task specialization but adds orchestration and inter-agent failure modes"
+        ]
+      }
+    ],
+    "criteria": [
+      {
+        "criterion_id": "implementation_complexity",
+        "description": "Engineering and operational effort to build, integrate, monitor, and maintain the approach for a 20-person SaaS company.",
+        "direction": "lower_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Requires substantial orchestration, specialized expertise, and ongoing maintenance beyond what a 20-person SaaS company can reasonably support.",
+          "plausible": "Can be implemented and maintained with manageable effort, but requires meaningful integration or operational work.",
+          "strong": "Straightforward to build, integrate, and maintain with limited engineering and operational overhead."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "total_cost",
+        "description": "Expected total cost of implementation and ongoing operation, including model usage, infrastructure, tooling, and maintenance.",
+        "direction": "lower_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Likely to create materially higher or difficult-to-predict costs for a small SaaS company, with little clear cost control.",
+          "plausible": "Costs appear manageable but depend on usage, tooling, or ongoing maintenance and need active monitoring.",
+          "strong": "Likely to remain economical at the company's scale, with costs that are relatively simple to estimate and control."
+        },
+        "thresholds": null,
+        "time_sensitive": true,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "reliability",
+        "description": "Ability to resolve support requests accurately and consistently, including handling failures, escalation, and end-to-end task completion.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Coordination or execution failures are difficult to detect or recover from, and the approach offers weak consistency or escalation.",
+          "plausible": "Can handle common requests consistently, but has notable failure cases or requires human review and recovery procedures.",
+          "strong": "Provides dependable outcomes for the intended support workload, with clear failure detection, recovery, and human escalation."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "safeguards",
+        "description": "Ability to enforce access controls, privacy and data boundaries, approval requirements, auditability, and safe escalation in customer support workflows.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Difficult to constrain or audit actions and data access, with weak control over unsafe or unauthorized behavior.",
+          "plausible": "Supports practical guardrails and human review, but controls or auditability require additional design and monitoring.",
+          "strong": "Makes it straightforward to enforce least privilege, approval gates, data boundaries, audit trails, and escalation."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      }
+    ],
+    "facets": [],
+    "target_entity_count": 0,
+    "assumptions": [
+      "Assume the comparison concerns architectures for automating customer support workflows, not specific vendors or products.",
+      "Assume the company has a modest engineering and operations capacity typical of a 20-person SaaS company.",
+      "Assume the support workload, ticket volume, existing systems, and regulatory obligations are unspecified; assess trade-offs generally rather than against a particular deployment.",
+      "No stated priority for implementation_complexity, total_cost, reliability, safeguards: equal default weight 3."
+    ],
+    "initial_queries": [
+      "single-agent vs multi-agent support automation complexity cost reliability safeguards",
+      "single-agent support automation reliability safeguards cost small SaaS"
+    ],
+    "search_context": ""
+  },
+  "provenance": {
+    "source_store": "evaluations/snapshots/Q3/b891d16fe6/plan_rep1.json",
+    "source_store_sha256": "2a6cdd43fbe7d71d5305e31b6d2a2a680a11550f0e7af51891353d539fe75d18",
+    "regenerated_with": "pathfinder.planner (unchanged since V2) in replay mode",
+    "plan_hash": "4ec777dd03d648be",
+    "question": "Compare single-agent and multi-agent support automation for a 20-person SaaS company, considering complexity, cost, reliability and safeguards."
+  },
+  "validation": [
+    "mode is comparison as in queries.json",
+    "2 alternatives (>= 2)",
+    "4 criteria (2-6)",
+    "unique criterion ids",
+    "weights within 1-5",
+    "every criterion has 0/1/2 rubric anchors",
+    "preferred scopes are declared scopes",
+    "2 initial queries"
+  ]
+}

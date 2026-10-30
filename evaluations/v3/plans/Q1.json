@@ -1,0 +1,127 @@
+{
+  "plan": {
+    "question": "Compare Qdrant, Weaviate, and Milvus for a small team building RAG; consider deployment, filtering and operational effort.",
+    "mode": "comparison",
+    "alternatives": [
+      {
+        "name": "Qdrant",
+        "aliases": [
+          "Qdrant",
+          "Qdrant Vector Database"
+        ],
+        "official_domains": [
+          "qdrant.tech"
+        ],
+        "kind": "named",
+        "defining_features": []
+      },
+      {
+        "name": "Weaviate",
+        "aliases": [
+          "Weaviate",
+          "Weaviate Vector Database"
+        ],
+        "official_domains": [
+          "weaviate.io"
+        ],
+        "kind": "named",
+        "defining_features": []
+      },
+      {
+        "name": "Milvus",
+        "aliases": [
+          "Milvus",
+          "Milvus Vector Database"
+        ],
+        "official_domains": [
+          "milvus.io"
+        ],
+        "kind": "named",
+        "defining_features": []
+      }
+    ],
+    "criteria": [
+      {
+        "criterion_id": "deployment_fit",
+        "description": "How well the available deployment options fit a small team building a RAG application, including the practicality of getting started and choosing between managed and self-hosted deployment.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Deployment choices or setup are a poor fit for a small team, with substantial prerequisites or limited flexibility.",
+          "plausible": "A workable deployment path exists, though setup or deployment choices involve some trade-offs for a small team.",
+          "strong": "A small team can readily select and get started with a deployment model suited to its needs."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "filtering_capability",
+        "description": "How well filtering supports RAG use cases, especially applying metadata filters alongside vector search.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Filtering is missing or notably limited for common metadata-filtered RAG retrieval.",
+          "plausible": "Common metadata-filtered retrieval is supported, but with meaningful limitations or complexity.",
+          "strong": "Flexible metadata filtering works effectively with vector retrieval for common RAG needs."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "operational_effort",
+        "description": "Ongoing effort for a small team to deploy, maintain, and operate the database, compared like-for-like by deployment model.",
+        "direction": "lower_is_better",
+        "weight": 5,
+        "weight_source": "inferred",
+        "anchors": {
+          "poor": "Requires substantial recurring specialist effort for routine operation in the stated deployment scope.",
+          "plausible": "Routine operation is manageable, but still involves meaningful maintenance or operational work.",
+          "strong": "Routine operation requires little ongoing effort from a small team in the stated deployment scope."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [
+          "managed",
+          "self_hosted"
+        ],
+        "preferred_scope": null
+      }
+    ],
+    "facets": [],
+    "target_entity_count": 3,
+    "assumptions": [
+      "No cloud provider, infrastructure, or deployment model has been specified, so managed and self-hosted operational effort should be evaluated separately.",
+      "The RAG use case involves storing metadata and applying filters during vector retrieval, but no particular filter complexity or scale has been specified.",
+      "No numeric performance, budget, or scale requirements have been provided.",
+      "No stated priority for deployment_fit, filtering_capability: equal default weight 3."
+    ],
+    "initial_queries": [
+      "Qdrant Weaviate Milvus deployment options managed self-hosted official documentation",
+      "Qdrant Weaviate Milvus metadata filtering vector search RAG comparison"
+    ],
+    "search_context": ""
+  },
+  "provenance": {
+    "source_store": "evaluations/snapshots/Q1/b891d16fe6/plan_rep1.json",
+    "source_store_sha256": "787a9de896ecda19eea69a857de53243792a51e1ea0a8e05bf13cb45c8243dfd",
+    "regenerated_with": "pathfinder.planner (unchanged since V2) in replay mode",
+    "plan_hash": "86d77f5966b533d0",
+    "question": "Compare Qdrant, Weaviate, and Milvus for a small team building RAG; consider deployment, filtering and operational effort."
+  },
+  "validation": [
+    "mode is comparison as in queries.json",
+    "3 alternatives (>= 2)",
+    "3 criteria (2-6)",
+    "unique criterion ids",
+    "weights within 1-5",
+    "every criterion has 0/1/2 rubric anchors",
+    "preferred scopes are declared scopes",
+    "2 initial queries"
+  ]
+}

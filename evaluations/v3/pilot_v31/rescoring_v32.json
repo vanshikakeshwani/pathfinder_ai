@@ -1,0 +1,784 @@
+{
+ "label": "Post-fix (v3.2) retrospective offline re-scoring of V3.1 pilot evidence - NOT a new live benchmark",
+ "runs": {
+  "Q1_r1_adaptive": {
+   "old": {
+    "supported": 7,
+    "strict": 7,
+    "consensus": 0,
+    "leader": "Qdrant",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Qdrant": [
+      14,
+      17
+     ],
+     "Weaviate": [
+      9,
+      19
+     ],
+     "Milvus": [
+      14,
+      14
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "Qdrant's advantage on deployment_fit rests only on Qdrant's own (self-reported) claims",
+     "Qdrant's own score on filtering_capability is disputed (verified scores [1, 2])"
+    ]
+   },
+   "new": {
+    "supported": 7,
+    "strict": 7,
+    "consensus": 0,
+    "leader": "Qdrant",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Qdrant": [
+      14,
+      17
+     ],
+     "Weaviate": [
+      9,
+      19
+     ],
+     "Milvus": [
+      14,
+      14
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "Qdrant's advantage on deployment_fit rests only on Qdrant's own (self-reported) claims",
+     "Qdrant's own score on filtering_capability is disputed (verified scores [1, 2])"
+    ]
+   },
+   "dimension_changes": [],
+   "changed_cells": {}
+  },
+  "Q1_r1_static": {
+   "old": {
+    "supported": 6,
+    "strict": 6,
+    "consensus": 0,
+    "leader": "Qdrant",
+    "stability": "robust",
+    "recommendation": "withheld",
+    "bounds": {
+     "Qdrant": [
+      22,
+      22
+     ],
+     "Weaviate": [
+      9,
+      19
+     ],
+     "Milvus": [
+      3,
+      19
+     ]
+    },
+    "reasons": [
+     "differentiating cells lack strong support (single source or non-official): Qdrant:filtering_capability, Milvus:filtering_capability",
+     "Qdrant's advantage on deployment_fit rests only on Qdrant's own (self-reported) claims"
+    ]
+   },
+   "new": {
+    "supported": 6,
+    "strict": 6,
+    "consensus": 0,
+    "leader": "Qdrant",
+    "stability": "robust",
+    "recommendation": "withheld",
+    "bounds": {
+     "Qdrant": [
+      22,
+      22
+     ],
+     "Weaviate": [
+      9,
+      19
+     ],
+     "Milvus": [
+      3,
+      19
+     ]
+    },
+    "reasons": [
+     "differentiating cells lack strong support (single source or non-official): Qdrant:filtering_capability, Milvus:filtering_capability",
+     "Qdrant's advantage on deployment_fit rests only on Qdrant's own (self-reported) claims"
+    ]
+   },
+   "dimension_changes": [],
+   "changed_cells": {}
+  },
+  "Q1_r1_v2_policy": {
+   "old": {
+    "supported": 6,
+    "strict": 6,
+    "consensus": 0,
+    "leader": "Weaviate",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Qdrant": [
+      11,
+      14
+     ],
+     "Weaviate": [
+      9,
+      19
+     ],
+     "Milvus": [
+      11,
+      14
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "differentiating cells lack strong support (single source or non-official): Weaviate:filtering_capability, Milvus:filtering_capability",
+     "critical criterion operational_effort (weight 5) has no supported score for Weaviate"
+    ]
+   },
+   "new": {
+    "supported": 6,
+    "strict": 6,
+    "consensus": 0,
+    "leader": "Weaviate",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Qdrant": [
+      11,
+      14
+     ],
+     "Weaviate": [
+      9,
+      19
+     ],
+     "Milvus": [
+      11,
+      14
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "differentiating cells lack strong support (single source or non-official): Weaviate:filtering_capability, Milvus:filtering_capability",
+     "critical criterion operational_effort (weight 5) has no supported score for Weaviate"
+    ]
+   },
+   "dimension_changes": [],
+   "changed_cells": {}
+  },
+  "Q4_r1_adaptive": {
+   "old": {
+    "supported": 10,
+    "strict": 9,
+    "consensus": 1,
+    "leader": "Session-only memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Session-only memory": [
+      12,
+      12
+     ],
+     "Persistent conversation-log retrieval": [
+      6,
+      6
+     ],
+     "Summarized customer-profile memory": [
+      9,
+      9
+     ],
+     "Hybrid layered memory": [
+      3,
+      15
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "differentiating cells lack strong support (single source or non-official): Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness, Session-only memory:privacy_protection, Persistent conversation-log retrieval:privacy_protection",
+     "Summarized customer-profile memory:retrieval_effectiveness rests on a weak qualified consensus (dissent disclosed; needs more independent agreement)"
+    ]
+   },
+   "new": {
+    "supported": 10,
+    "strict": 9,
+    "consensus": 1,
+    "leader": "Session-only memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Session-only memory": [
+      12,
+      12
+     ],
+     "Persistent conversation-log retrieval": [
+      6,
+      6
+     ],
+     "Summarized customer-profile memory": [
+      9,
+      9
+     ],
+     "Hybrid layered memory": [
+      3,
+      15
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "differentiating cells lack strong support (single source or non-official): Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness, Session-only memory:privacy_protection, Persistent conversation-log retrieval:privacy_protection",
+     "Summarized customer-profile memory:retrieval_effectiveness rests on a weak qualified consensus (dissent disclosed; needs more independent agreement)"
+    ]
+   },
+   "dimension_changes": [],
+   "changed_cells": {}
+  },
+  "Q4_r1_static": {
+   "old": {
+    "supported": 9,
+    "strict": 9,
+    "consensus": 0,
+    "leader": "Session-only memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Session-only memory": [
+      12,
+      12
+     ],
+     "Persistent conversation-log retrieval": [
+      6,
+      6
+     ],
+     "Summarized customer-profile memory": [
+      9,
+      12
+     ],
+     "Hybrid layered memory": [
+      3,
+      15
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "differentiating cells lack strong support (single source or non-official): Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness, Hybrid layered memory:retrieval_effectiveness, Session-only memory:privacy_protection"
+    ]
+   },
+   "new": {
+    "supported": 9,
+    "strict": 9,
+    "consensus": 0,
+    "leader": "Session-only memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Session-only memory": [
+      12,
+      12
+     ],
+     "Persistent conversation-log retrieval": [
+      6,
+      6
+     ],
+     "Summarized customer-profile memory": [
+      9,
+      12
+     ],
+     "Hybrid layered memory": [
+      3,
+      15
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "differentiating cells lack strong support (single source or non-official): Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness, Hybrid layered memory:retrieval_effectiveness, Session-only memory:privacy_protection"
+    ]
+   },
+   "dimension_changes": [],
+   "changed_cells": {}
+  },
+  "Q4_r1_v2_policy": {
+   "old": {
+    "supported": 9,
+    "strict": 9,
+    "consensus": 0,
+    "leader": "Session-only memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Session-only memory": [
+      12,
+      12
+     ],
+     "Persistent conversation-log retrieval": [
+      6,
+      6
+     ],
+     "Summarized customer-profile memory": [
+      9,
+      12
+     ],
+     "Hybrid layered memory": [
+      3,
+      15
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "differentiating cells lack strong support (single source or non-official): Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness, Hybrid layered memory:retrieval_effectiveness, Session-only memory:privacy_protection, Persistent conversation-log retrieval:privacy_protection"
+    ]
+   },
+   "new": {
+    "supported": 9,
+    "strict": 9,
+    "consensus": 0,
+    "leader": "Session-only memory",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Session-only memory": [
+      12,
+      12
+     ],
+     "Persistent conversation-log retrieval": [
+      6,
+      6
+     ],
+     "Summarized customer-profile memory": [
+      9,
+      12
+     ],
+     "Hybrid layered memory": [
+      3,
+      15
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "differentiating cells lack strong support (single source or non-official): Session-only memory:retrieval_effectiveness, Persistent conversation-log retrieval:retrieval_effectiveness, Hybrid layered memory:retrieval_effectiveness, Session-only memory:privacy_protection, Persistent conversation-log retrieval:privacy_protection"
+    ]
+   },
+   "dimension_changes": [],
+   "changed_cells": {}
+  },
+  "Q5_r1_adaptive": {
+   "old": {
+    "supported": 5,
+    "strict": 5,
+    "consensus": 0,
+    "leader": "Managed vector database",
+    "stability": "robust",
+    "recommendation": "withheld",
+    "bounds": {
+     "Managed vector database": [
+      16,
+      16
+     ],
+     "Self-hosted vector database": [
+      6,
+      9
+     ]
+    },
+    "reasons": [
+     "differentiating cells lack strong support (single source or non-official): Self-hosted vector database:control_and_customization"
+    ]
+   },
+   "new": {
+    "supported": 5,
+    "strict": 5,
+    "consensus": 0,
+    "leader": "Managed vector database",
+    "stability": "robust",
+    "recommendation": "withheld",
+    "bounds": {
+     "Managed vector database": [
+      16,
+      16
+     ],
+     "Self-hosted vector database": [
+      6,
+      9
+     ]
+    },
+    "reasons": [
+     "differentiating cells lack strong support (single source or non-official): Self-hosted vector database:control_and_customization"
+    ]
+   },
+   "dimension_changes": [
+    {
+     "evidence": "EV_4",
+     "cell": "Self-hosted vector database:startup_cost",
+     "score": 0,
+     "before": "engineering_labour",
+     "after": "total_cost_of_ownership",
+     "excerpt": "However, self-hosting does not mean the database is free. It shifts costs from the vendor bill to infrastructure spend a"
+    },
+    {
+     "evidence": "EV_8",
+     "cell": "Managed vector database:startup_cost",
+     "score": 1,
+     "before": "engineering_labour",
+     "after": "total_cost_of_ownership",
+     "excerpt": "If you have no dedicated infra/SRE capacity, a managed service is almost always cheaper once engineering time is priced "
+    },
+    {
+     "evidence": "EV_9",
+     "cell": "Managed vector database:startup_cost",
+     "score": 1,
+     "before": "engineering_labour",
+     "after": "recurring_infrastructure",
+     "excerpt": "Cost. The s1.x1 pod sufficient for our index ran ~$70/mo per pod, and we needed 2 for redundancy. Add metadata filtering"
+    },
+    {
+     "evidence": "EV_14",
+     "cell": "Self-hosted vector database:startup_cost",
+     "score": 0,
+     "before": "recurring_infrastructure",
+     "after": "total_cost_of_ownership",
+     "excerpt": "The infrastructure is $530/month. The real cost is $3,530/month. That's what the pricing comparisons miss."
+    }
+   ],
+   "changed_cells": {
+    "Managed vector database:startup_cost": {
+     "before": {
+      "state": "supported",
+      "kind": null,
+      "interval": [
+       1,
+       1
+      ],
+      "factual_confidence": "moderate",
+      "dimensions": [
+       "engineering_labour"
+      ]
+     },
+     "after": {
+      "state": "supported",
+      "kind": null,
+      "interval": [
+       1,
+       1
+      ],
+      "factual_confidence": "moderate",
+      "heterogeneous": false,
+      "ambiguous_dimension": false,
+      "dimensions": [
+       "recurring_infrastructure",
+       "total_cost_of_ownership"
+      ]
+     },
+     "decision": "all families agree",
+     "products": null
+    },
+    "Self-hosted vector database:startup_cost": {
+     "before": {
+      "state": "disputed",
+      "kind": "independent_disagreement",
+      "interval": [
+       0,
+       1
+      ],
+      "factual_confidence": "low",
+      "dimensions": [
+       "engineering_labour",
+       "recurring_infrastructure"
+      ]
+     },
+     "after": {
+      "state": "scope_dependent",
+      "kind": "dimension_mismatch",
+      "interval": [
+       0,
+       1
+      ],
+      "factual_confidence": "high",
+      "heterogeneous": false,
+      "ambiguous_dimension": false,
+      "dimensions": [
+       "recurring_infrastructure",
+       "total_cost_of_ownership"
+      ]
+     },
+     "decision": "cost evidence measures different dimensions: recurring_infrastructure=1, total_cost_of_ownership=0; not pooled into one score",
+     "products": null
+    }
+   }
+  },
+  "Q5_r1_static": {
+   "old": {
+    "supported": 3,
+    "strict": 2,
+    "consensus": 1,
+    "leader": "Managed vector database",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Managed vector database": [
+      13,
+      16
+     ],
+     "Self-hosted vector database": [
+      6,
+      14
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "Managed vector database's own score on control_and_customization is disputed (verified scores [0, 1])"
+    ]
+   },
+   "new": {
+    "supported": 3,
+    "strict": 2,
+    "consensus": 1,
+    "leader": "Managed vector database",
+    "stability": "provisional",
+    "recommendation": "withheld",
+    "bounds": {
+     "Managed vector database": [
+      13,
+      16
+     ],
+     "Self-hosted vector database": [
+      6,
+      14
+     ]
+    },
+    "reasons": [
+     "score intervals overlap (provisional leader only)",
+     "Managed vector database's own score on control_and_customization is disputed (verified scores [0, 1])",
+     "Managed vector database:startup_cost rests on prices of different named products/plans; they are examples, not one comparable category-level cost",
+     "Managed vector database:startup_cost includes cost evidence whose dimension (infrastructure, labour, total, ...) cannot be determined"
+    ]
+   },
+   "dimension_changes": [
+    {
+     "evidence": "EV_4",
+     "cell": "Self-hosted vector database:startup_cost",
+     "score": 0,
+     "before": "engineering_labour",
+     "after": "total_cost_of_ownership",
+     "excerpt": "However, self-hosting does not mean the database is free. It shifts costs from the vendor bill to infrastructure spend a"
+    }
+   ],
+   "changed_cells": {
+    "Managed vector database:startup_cost": {
+     "before": {
+      "state": "consensus",
+      "kind": "weak",
+      "interval": [
+       1,
+       1
+      ],
+      "factual_confidence": "moderate",
+      "dimensions": [
+       "recurring_infrastructure"
+      ]
+     },
+     "after": {
+      "state": "consensus",
+      "kind": "heterogeneous",
+      "interval": [
+       1,
+       1
+      ],
+      "factual_confidence": "moderate",
+      "heterogeneous": true,
+      "ambiguous_dimension": true,
+      "dimensions": [
+       "recurring_infrastructure"
+      ]
+     },
+     "decision": "qualified consensus: 2 supporting vs 1 dissenting families (2 with certain independence); dissent retained",
+     "products": {
+      "adaptiverecall.com": [
+       "Pinecone",
+       "Qdrant"
+      ],
+      "zilliz.com": [
+       "Zilliz"
+      ],
+      "dev.to": [
+       "Weaviate"
+      ]
+     }
+    },
+    "Self-hosted vector database:startup_cost": {
+     "before": {
+      "state": "scope_dependent",
+      "kind": "dimension_mismatch",
+      "interval": [
+       0,
+       1
+      ],
+      "factual_confidence": "high",
+      "dimensions": [
+       "engineering_labour",
+       "recurring_infrastructure"
+      ]
+     },
+     "after": {
+      "state": "scope_dependent",
+      "kind": "dimension_mismatch",
+      "interval": [
+       0,
+       1
+      ],
+      "factual_confidence": "high",
+      "heterogeneous": false,
+      "ambiguous_dimension": false,
+      "dimensions": [
+       "engineering_labour",
+       "recurring_infrastructure",
+       "total_cost_of_ownership"
+      ]
+     },
+     "decision": "cost evidence measures different dimensions: engineering_labour=0, recurring_infrastructure=1, total_cost_of_ownership=0; not pooled into one score",
+     "products": null
+    }
+   }
+  },
+  "Q5_r1_v2_policy": {
+   "old": {
+    "supported": 6,
+    "strict": 5,
+    "consensus": 1,
+    "leader": "Managed vector database",
+    "stability": "robust",
+    "recommendation": "withheld",
+    "bounds": {
+     "Managed vector database": [
+      16,
+      16
+     ],
+     "Self-hosted vector database": [
+      6,
+      6
+     ]
+    },
+    "reasons": [
+     "differentiating cells lack strong support (single source or non-official): Managed vector database:startup_cost, Self-hosted vector database:startup_cost, Self-hosted vector database:control_and_customization",
+     "Self-hosted vector database:operational_effort rests on a weak qualified consensus (dissent disclosed; needs more independent agreement)"
+    ]
+   },
+   "new": {
+    "supported": 6,
+    "strict": 5,
+    "consensus": 1,
+    "leader": "Managed vector database",
+    "stability": "robust",
+    "recommendation": "withheld",
+    "bounds": {
+     "Managed vector database": [
+      16,
+      16
+     ],
+     "Self-hosted vector database": [
+      6,
+      6
+     ]
+    },
+    "reasons": [
+     "differentiating cells lack strong support (single source or non-official): Managed vector database:startup_cost, Self-hosted vector database:startup_cost, Self-hosted vector database:control_and_customization",
+     "Self-hosted vector database:operational_effort rests on a weak qualified consensus (dissent disclosed; needs more independent agreement)"
+    ]
+   },
+   "dimension_changes": [
+    {
+     "evidence": "EV_4",
+     "cell": "Self-hosted vector database:startup_cost",
+     "score": 0,
+     "before": "engineering_labour",
+     "after": "total_cost_of_ownership",
+     "excerpt": "However, self-hosting does not mean the database is free. It shifts costs from the vendor bill to infrastructure spend a"
+    },
+    {
+     "evidence": "EV_8",
+     "cell": "Managed vector database:startup_cost",
+     "score": 1,
+     "before": "engineering_labour",
+     "after": "total_cost_of_ownership",
+     "excerpt": "If you have no dedicated infra/SRE capacity, a managed service is almost always cheaper once engineering time is priced "
+    },
+    {
+     "evidence": "EV_9",
+     "cell": "Managed vector database:startup_cost",
+     "score": 1,
+     "before": "engineering_labour",
+     "after": "recurring_infrastructure",
+     "excerpt": "Cost. The s1.x1 pod sufficient for our index ran ~$70/mo per pod, and we needed 2 for redundancy. Add metadata filtering"
+    }
+   ],
+   "changed_cells": {
+    "Managed vector database:startup_cost": {
+     "before": {
+      "state": "supported",
+      "kind": null,
+      "interval": [
+       1,
+       1
+      ],
+      "factual_confidence": "moderate",
+      "dimensions": [
+       "engineering_labour",
+       "recurring_infrastructure"
+      ]
+     },
+     "after": {
+      "state": "supported",
+      "kind": null,
+      "interval": [
+       1,
+       1
+      ],
+      "factual_confidence": "moderate",
+      "heterogeneous": false,
+      "ambiguous_dimension": false,
+      "dimensions": [
+       "recurring_infrastructure",
+       "total_cost_of_ownership"
+      ]
+     },
+     "decision": "all families agree",
+     "products": null
+    },
+    "Self-hosted vector database:startup_cost": {
+     "before": {
+      "state": "supported",
+      "kind": null,
+      "interval": [
+       0,
+       0
+      ],
+      "factual_confidence": "moderate",
+      "dimensions": [
+       "engineering_labour"
+      ]
+     },
+     "after": {
+      "state": "supported",
+      "kind": null,
+      "interval": [
+       0,
+       0
+      ],
+      "factual_confidence": "moderate",
+      "heterogeneous": false,
+      "ambiguous_dimension": false,
+      "dimensions": [
+       "total_cost_of_ownership"
+      ]
+     },
+     "decision": "all families agree",
+     "products": null
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,217 @@
+{
+  "plan": {
+    "question": "Compare Qdrant, Weaviate, and Milvus for a small team building RAG; consider deployment, filtering and operational effort.",
+    "mode": "comparison",
+    "alternatives": [
+      {
+        "name": "Qdrant",
+        "aliases": [
+          "Qdrant Vector Database"
+        ],
+        "official_domains": [
+          "qdrant.tech"
+        ]
+      },
+      {
+        "name": "Weaviate",
+        "aliases": [
+          "Weaviate Vector Database"
+        ],
+        "official_domains": [
+          "weaviate.io"
+        ]
+      },
+      {
+        "name": "Milvus",
+        "aliases": [
+          "Milvus Vector Database",
+          "Zilliz Cloud"
+        ],
+        "official_domains": [
+          "milvus.io"
+        ]
+      }
+    ],
+    "criteria": [
+      {
+        "criterion_id": "deployment_fit",
+        "description": "How well the available deployment models fit a small team building RAG, including ease of getting started and options to run self-managed or managed.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Deployment choices or setup are a poor fit for a small team and likely require substantial infrastructure work.",
+          "plausible": "A workable deployment path exists, but entails meaningful setup or compromises for the team's likely needs.",
+          "strong": "A straightforward deployment path fits a small team's RAG use case, with suitable hosting options."
+        },
+        "thresholds": null,
+        "time_sensitive": false
+      },
+      {
+        "criterion_id": "filtering_capability",
+        "description": "Support for filtering vector search results using metadata and combining filters with retrieval in common RAG workflows.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Filtering support is limited or awkward for common metadata-filtered RAG retrieval.",
+          "plausible": "Common metadata filtering is supported, but important query patterns or usability may require workarounds.",
+          "strong": "Flexible, well-integrated metadata filtering supports common and more demanding RAG retrieval patterns."
+        },
+        "thresholds": null,
+        "time_sensitive": false
+      },
+      {
+        "criterion_id": "operational_effort",
+        "description": "Ongoing effort for a small team to deploy, monitor, maintain, and scale the database for a RAG application.",
+        "direction": "lower_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Likely requires substantial ongoing administration, infrastructure expertise, or operational overhead.",
+          "plausible": "Manageable for a small team, though routine maintenance or scaling requires noticeable effort.",
+          "strong": "Can be operated with little ongoing effort through straightforward administration or managed-service options."
+        },
+        "thresholds": null,
+        "time_sensitive": false
+      }
+    ],
+    "facets": [],
+    "target_entity_count": 3,
+    "assumptions": [
+      "Assume the team has not specified cloud provider, deployment environment, scale, or budget, so compare broadly applicable deployment options rather than a particular architecture.",
+      "Assume filtering means metadata-based filtering during vector retrieval for typical RAG use cases; no specific filter language or query complexity was specified.",
+      "Treat operational effort as a qualitative small-team concern, without assuming the team has dedicated database or infrastructure staff.",
+      "No stated priority for deployment_fit, filtering_capability, operational_effort: equal default weight 3."
+    ],
+    "initial_queries": [
+      "Qdrant Weaviate Milvus comparison deployment filtering operations small team RAG",
+      "Qdrant Weaviate Milvus official documentation metadata filtering deployment options"
+    ]
+  },
+  "cells": [
+    {
+      "alternative": "Qdrant",
+      "criterion_id": "deployment_fit",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_1"
+      ],
+      "factual_confidence": "moderate"
+    },
+    {
+      "alternative": "Qdrant",
+      "criterion_id": "filtering_capability",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_2"
+      ],
+      "factual_confidence": "high"
+    },
+    {
+      "alternative": "Qdrant",
+      "criterion_id": "operational_effort",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_3"
+      ],
+      "factual_confidence": "high"
+    },
+    {
+      "alternative": "Weaviate",
+      "criterion_id": "deployment_fit",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_4"
+      ],
+      "factual_confidence": "moderate"
+    },
+    {
+      "alternative": "Weaviate",
+      "criterion_id": "filtering_capability",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_5"
+      ],
+      "factual_confidence": "moderate"
+    },
+    {
+      "alternative": "Weaviate",
+      "criterion_id": "operational_effort",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_6"
+      ],
+      "factual_confidence": "moderate"
+    },
+    {
+      "alternative": "Milvus",
+      "criterion_id": "deployment_fit",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_7"
+      ],
+      "factual_confidence": "moderate"
+    },
+    {
+      "alternative": "Milvus",
+      "criterion_id": "filtering_capability",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_8"
+      ],
+      "factual_confidence": "moderate"
+    },
+    {
+      "alternative": "Milvus",
+      "criterion_id": "operational_effort",
+      "state": "supported",
+      "lower": 0,
+      "upper": 0,
+      "score": 0,
+      "evidence_ids": [
+        "EV_9"
+      ],
+      "factual_confidence": "moderate"
+    }
+  ],
+  "bounds": {
+    "Qdrant": [
+      18,
+      18
+    ],
+    "Weaviate": [
+      15,
+      15
+    ],
+    "Milvus": [
+      9,
+      9
+    ]
+  },
+  "targets": []
+}

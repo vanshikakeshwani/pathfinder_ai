@@ -1,0 +1,395 @@
+{
+  "tools": [
+    {
+      "tool": "exa_search",
+      "detail": "India headquartered HR technology B2B SaaS companies official company about headquarters product positioning",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.1,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_search",
+      "detail": "India HR SaaS companies headquarters B2B HRMS recruiting payroll official websites",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_get_contents",
+      "detail": "https://www.peoplestrong.com/about-us/ https://www.zinghr.com/?vahukId=152093541738487 https://www.greythr.com/ https://www.timelabs.in/",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.004
+    },
+    {
+      "tool": "exa_search",
+      "detail": "PeopleStrong Company offers software as a service to business customers, supported by evidence of its B2B SaaS model.",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 1938.6,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_get_contents",
+      "detail": "https://aws.amazon.com/marketplace/pp/prodview-734bpejg7urh4 https://www.peoplestrong.com/terms-of-service-jinie/",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 459.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.002
+    },
+    {
+      "tool": "exa_search",
+      "detail": "PeopleStrong Company is headquartered in India; include evidence supporting its headquarters location.",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 2051.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_get_contents",
+      "detail": "https://www.peoplestrong.com/get-in-touch/ https://www.peoplestrong.com/blog/peoplestrong-announces-a-majority-stake-investment-from-goldman-sachs-alternatives/",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 434.5,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.002
+    },
+    {
+      "tool": "exa_search",
+      "detail": "Timelabs Company offers software as a service to business customers, supported by evidence of its B2B SaaS model.",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 1687.2,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.007
+    },
+    {
+      "tool": "exa_get_contents",
+      "detail": "https://www.timelabs.in/hr-software-pricing https://www.timelabs.in/Cloud-Based-Hr-Software.aspx",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 415.2,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "cost_usd": 0.002
+    }
+  ],
+  "llm": [
+    {
+      "task": "extract",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.4,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 2297,
+        "prompt_tokens": 7569,
+        "total_tokens": 9866,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 1244,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 7566,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "verify",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 0.1,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 602,
+        "prompt_tokens": 3514,
+        "total_tokens": 4116,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 3511,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "extract",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 10225.3,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 1022,
+        "prompt_tokens": 5488,
+        "total_tokens": 6510,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 257,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 5485,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "verify",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 5826.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 388,
+        "prompt_tokens": 2001,
+        "total_tokens": 2389,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 97,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 1998,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "extract",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 18350.0,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 1944,
+        "prompt_tokens": 2616,
+        "total_tokens": 4560,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 1394,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 2613,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "verify",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 7487.9,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 632,
+        "prompt_tokens": 1822,
+        "total_tokens": 2454,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 377,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 1819,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "extract",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 12504.6,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 1395,
+        "prompt_tokens": 5162,
+        "total_tokens": 6557,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 1034,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 5159,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "verify",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 5440.4,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 402,
+        "prompt_tokens": 1299,
+        "total_tokens": 1701,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 172,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 1296,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    },
+    {
+      "task": "report",
+      "attempt": 1,
+      "ok": true,
+      "latency_ms": 11486.7,
+      "error_kind": null,
+      "status": null,
+      "message": "",
+      "usage": {
+        "completion_tokens": 672,
+        "prompt_tokens": 2549,
+        "total_tokens": 3221,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 305,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": 2546,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        },
+        "cost": 0.0,
+        "is_byok": false
+      }
+    }
+  ],
+  "llm_model": "gpt-6-luna (record)",
+  "budget": {
+    "search_calls": 5,
+    "max_search_calls": 6,
+    "content_pages": 10,
+    "max_content_pages": 12,
+    "research_actions_spent": 15,
+    "llm_calls": 9,
+    "max_llm_calls": null,
+    "elapsed_s": 78.34,
+    "max_seconds": null
+  },
+  "queries": [
+    "India headquartered HR technology B2B SaaS companies official company about headquarters product positioning",
+    "India HR SaaS companies headquarters B2B HRMS recruiting payroll official websites",
+    "PeopleStrong Company offers software as a service to business customers, supported by evidence of its B2B SaaS model.",
+    "PeopleStrong Company is headquartered in India; include evidence supporting its headquarters location.",
+    "Timelabs Company offers software as a service to business customers, supported by evidence of its B2B SaaS model."
+  ],
+  "strategy": "adaptive"
+}

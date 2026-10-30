@@ -1,0 +1,224 @@
+{
+  "run_id": "EVAL_Q1_r2_adaptive_20261030T052052_62dd99",
+  "question": "Compare Qdrant, Weaviate, and Milvus for a small team building RAG; consider deployment, filtering and operational effort.",
+  "mode": "comparison",
+  "short_answer": "Qdrant leads provisionally, but score intervals overlap (Qdrant [9,18], Weaviate [9,15], Milvus [3,9]); current evidence does not force a unique recommendation. The comparison turns mainly on how much infrastructure a small team wants to operate and how selective its metadata filters are. Evidence is strongest for deployment and operational trade-offs; it does not establish a like-for-like performance or cost comparison across all three.",
+  "findings": [
+    {
+      "text": "Qdrant offers a simple persistent Docker quickstart and a small managed free tier, though the free tier has resource limits and can be suspended after inactivity. Its filtering approach integrates metadata constraints into HNSW traversal, including for highly selective filters.",
+      "evidence_ids": [
+        "EV_1",
+        "EV_2",
+        "EV_3"
+      ]
+    },
+    {
+      "text": "Self-hosting Qdrant leaves backups, monitoring, scaling, and failure recovery to the team; the supplied estimate is 10–20 engineering hours per month. Managed Cloud is presented as removing infrastructure management, so deployment choice substantially changes the operational burden.",
+      "evidence_ids": [
+        "EV_9",
+        "EV_10",
+        "EV_11",
+        "EV_18",
+        "EV_19"
+      ]
+    },
+    {
+      "text": "Weaviate offers managed Cloud and a documented path from Docker experimentation to Kubernetes. Its filtering combines inverted-index pre-filtering, ACORN traversal, and a brute-force cutoff. The evidence also flags resource and latency variability concerns, including one report of memory pressure and debugging at 8 million vectors; these are not a controlled comparison.",
+      "evidence_ids": [
+        "EV_4",
+        "EV_5",
+        "EV_6",
+        "EV_12",
+        "EV_13"
+      ]
+    },
+    {
+      "text": "Milvus supports pre-search filtering and iterative processing for complex expressions, but the cited self-hosted setup has substantial hardware requirements and involves multiple services and supporting stores to operate. The evidence does not establish its managed-deployment options or effort for a small team.",
+      "evidence_ids": [
+        "EV_7",
+        "EV_8",
+        "EV_15",
+        "EV_16"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC_1",
+      "url": "https://docs.weaviate.io/deploy",
+      "title": "Deploying Weaviate | Weaviate Documentation",
+      "domain": "weaviate.io",
+      "retrieved_at": "2026-10-30T05:20:52+00:00",
+      "published_at": null
+    },
+    {
+      "source_id": "SRC_2",
+      "url": "https://blog.elest.io/qdrant-vs-weaviate-vs-milvus-which-vector-database-for-your-rag-pipeline/",
+      "title": "Qdrant vs Weaviate vs Milvus: Which Vector Database for Your RAG Pipeline?",
+      "domain": "elest.io",
+      "retrieved_at": "2026-10-30T05:20:52+00:00",
+      "published_at": "2026-03-11T08:00:14.000Z"
+    },
+    {
+      "source_id": "SRC_3",
+      "url": "https://vectoropsreport.com/posts/qdrant-vs-weaviate-vs-milvus/",
+      "title": "Qdrant vs Weaviate vs Milvus: Recall, RAM, and Scale",
+      "domain": "vectoropsreport.com",
+      "retrieved_at": "2026-10-30T05:20:52+00:00",
+      "published_at": "2026-08-27T00:00:00.000Z"
+    },
+    {
+      "source_id": "SRC_6",
+      "url": "https://augustyniak.ai/blog/vector-databases-comparison-guide",
+      "title": "I've Used Pinecone, Weaviate, and Qdrant in Production. Here's What I'd Pick.",
+      "domain": "augustyniak.ai",
+      "retrieved_at": "2026-10-30T05:21:33+00:00",
+      "published_at": "2024-12-25T22:02:46.000Z"
+    },
+    {
+      "source_id": "SRC_7",
+      "url": "https://makmel.info/blog/2026-04-25-qdrant-vector-db-production",
+      "title": "Why I Run Qdrant in Production: A 3-Node Cluster vs the Alternatives — Makmel",
+      "domain": "makmel.info",
+      "retrieved_at": "2026-10-30T05:21:33+00:00",
+      "published_at": "2026-03-20T22:10:39.000Z"
+    },
+    {
+      "source_id": "SRC_8",
+      "url": "https://qdrant.tech/documentation/deploy-intro/",
+      "title": "Deploy Qdrant",
+      "domain": "qdrant.tech",
+      "retrieved_at": "2026-10-30T05:22:52+00:00",
+      "published_at": null
+    },
+    {
+      "source_id": "SRC_9",
+      "url": "https://qdrant.tech/documentation/overview/",
+      "title": "Overview - Qdrant",
+      "domain": "qdrant.tech",
+      "retrieved_at": "2026-10-30T05:22:52+00:00",
+      "published_at": null
+    }
+  ],
+  "confidence": "low",
+  "confidence_rule": "confidence = min(interval stability, lowest factual confidence among the leader's supported/disputed cells); robust/high=high, provisional/moderate=moderate, otherwise low. A withheld recommendation caps confidence at moderate, and at low when the withholding is due to non-comparable evidence.",
+  "factual_confidence": "low",
+  "decision_stability": "provisional",
+  "recommended": null,
+  "interval_leader": "Qdrant",
+  "recommendation_status": "withheld",
+  "recommendation_withheld_reasons": [
+    "score intervals overlap (provisional leader only)",
+    "differentiating cells lack strong support (single source or non-official): Qdrant:filtering_capability, Milvus:filtering_capability"
+  ],
+  "comparability_issues": [],
+  "single_source_cells": [
+    "Qdrant:filtering_capability",
+    "Weaviate:deployment_fit",
+    "Milvus:filtering_capability",
+    "Milvus:operational_effort"
+  ],
+  "requirement_coverage": {
+    "supported": 6,
+    "total": 9
+  },
+  "assumptions": [
+    "The team has limited operational capacity, but no specific team size or infrastructure expertise was given.",
+    "The intended workload is a typical RAG application using vector search with metadata filters; scale, latency, and availability requirements were not specified.",
+    "Both managed and self-hosted deployments should be considered because the user did not state a hosting preference.",
+    "No stated priority for deployment_fit, filtering_capability, operational_effort: equal default weight 3."
+  ],
+  "limitations": [
+    "Fit scores (0/1/2) are model-assisted assessments under the disclosed rubric and weights, not measurements.",
+    "Support verification uses the same model family as extraction; it is not ground truth and needs human audit.",
+    "'Robust' means interval dominance under the chosen criteria and weights, not that the option is factually best.",
+    "Single-source support (one independent source): Qdrant:filtering_capability, Weaviate:deployment_fit, Milvus:filtering_capability, Milvus:operational_effort.",
+    "Disputed (conflicting verified evidence, interval [0,2]): Qdrant:deployment_fit, Weaviate:filtering_capability, Milvus:deployment_fit.",
+    "14 extracted candidate(s) were rejected by grounding/verification (see verification_log.jsonl).",
+    "Stopped: budget_exhausted (MAX_RESEARCH_ROUNDS=3 reached)."
+  ],
+  "next_steps": [
+    "Compare current managed-service pricing, quotas, and production limits for all three using the team's expected vector count and query volume.",
+    "Benchmark representative RAG queries with the team's metadata filters, measuring latency, recall, and resource use on comparable configurations.",
+    "Validate production deployment and backup/recovery procedures for the shortlisted options, including what the team must operate versus what the provider manages."
+  ],
+  "stop_reason": "budget_exhausted",
+  "status": "partial",
+  "decision_changes": [
+    {
+      "round": 0,
+      "kind": "stability_changed",
+      "before": {
+        "recommended": null,
+        "stability": "undetermined"
+      },
+      "after": {
+        "recommended": "Weaviate",
+        "stability": "provisional"
+      },
+      "evidence_ids": [
+        "EV_1",
+        "EV_2",
+        "EV_3",
+        "EV_4",
+        "EV_5",
+        "EV_6",
+        "EV_7",
+        "EV_8"
+      ]
+    },
+    {
+      "round": 2,
+      "kind": "leader_changed",
+      "before": {
+        "recommended": "Weaviate",
+        "stability": "provisional"
+      },
+      "after": {
+        "recommended": "Qdrant",
+        "stability": "undetermined"
+      },
+      "evidence_ids": [
+        "EV_9",
+        "EV_10",
+        "EV_11",
+        "EV_12",
+        "EV_13",
+        "EV_14",
+        "EV_15",
+        "EV_16"
+      ]
+    },
+    {
+      "round": 3,
+      "kind": "stability_changed",
+      "before": {
+        "recommended": "Qdrant",
+        "stability": "undetermined"
+      },
+      "after": {
+        "recommended": "Qdrant",
+        "stability": "provisional"
+      },
+      "evidence_ids": [
+        "EV_17",
+        "EV_18",
+        "EV_19"
+      ]
+    }
+  ],
+  "decision_flip_count": 1,
+  "status_change_count": 2,
+  "research_budget_spent": {
+    "search_calls": 5,
+    "max_search_calls": 6,
+    "content_pages": 10,
+    "max_content_pages": 12,
+    "research_actions_spent": 15,
+    "llm_calls": 9,
+    "max_llm_calls": null,
+    "elapsed_s": 168.92,
+    "max_seconds": null
+  },
+  "synthetic": false
+}

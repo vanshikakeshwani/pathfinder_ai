@@ -1,0 +1,33 @@
+{
+  "mode": "record",
+  "config_fp": "a37e41b4ef",
+  "settings": {
+    "llm_provider": "experiential",
+    "llm_model": "gpt-6-luna",
+    "llm_base_url": "https://api.experientiallabs.ai/v1",
+    "llm_structured_mode": "json_schema",
+    "llm_temperature": 0.0,
+    "llm_max_retries": 2,
+    "exa_max_retries": 2,
+    "max_search_calls": 6,
+    "max_content_pages": 12,
+    "max_research_rounds": 3,
+    "max_no_progress": 2,
+    "max_evidence_per_round": 12,
+    "max_initial_queries": 2,
+    "results_per_search": 5,
+    "pages_per_search": 2,
+    "max_llm_calls": null,
+    "max_seconds": null
+  },
+  "question_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q8"
+  ],
+  "repeat": 1,
+  "started": "2026-10-29T22:51:37+00:00"
+}

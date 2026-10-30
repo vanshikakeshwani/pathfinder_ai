@@ -1,0 +1,230 @@
+{
+  "plan": {
+    "question": "Choose between managed and self-hosted vector databases for a startup with one backend engineer and limited operations time.",
+    "mode": "comparison",
+    "alternatives": [
+      {
+        "name": "Managed vector database",
+        "aliases": [],
+        "official_domains": [],
+        "kind": "approach",
+        "defining_features": [
+          "Provider operates the database infrastructure, upgrades, and routine maintenance",
+          "Typically offers a hosted service with provider-managed scaling and availability",
+          "Reduces the startup's direct infrastructure and database operations work"
+        ]
+      },
+      {
+        "name": "Self-hosted vector database",
+        "aliases": [],
+        "official_domains": [],
+        "kind": "approach",
+        "defining_features": [
+          "Startup deploys and operates the database on its own infrastructure",
+          "Team is responsible for upgrades, monitoring, backups, scaling, and incident response",
+          "Offers greater control over deployment, configuration, and infrastructure choices"
+        ]
+      }
+    ],
+    "criteria": [
+      {
+        "criterion_id": "operational_effort",
+        "description": "Engineering and operations effort required for deployment, maintenance, monitoring, scaling, and troubleshooting, given one backend engineer and limited operations time.",
+        "direction": "lower_is_better",
+        "weight": 5,
+        "weight_source": "inferred",
+        "anchors": {
+          "poor": "Requires substantial ongoing infrastructure work or frequent hands-on intervention that is difficult for one backend engineer to sustain.",
+          "plausible": "Can be operated with some recurring engineering attention, but leaves manageable time for other startup work.",
+          "strong": "Requires little ongoing operational attention and is practical for a startup with one backend engineer and limited operations time."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "startup_cost",
+        "description": "Overall cost to get started and run the database at a startup's likely early-stage scale, including service or infrastructure charges and material operational overhead.",
+        "direction": "lower_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Likely to impose high or unpredictable costs relative to an early-stage startup's needs.",
+          "plausible": "Cost appears manageable at modest usage, though meaningful charges or overhead may arise as usage grows.",
+          "strong": "Offers a clear, affordable path for modest early-stage usage with costs that appear reasonably predictable."
+        },
+        "thresholds": null,
+        "time_sensitive": true,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "control_and_customization",
+        "description": "Degree of control over deployment environment, configuration, data handling, and database behavior.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Provides limited control over deployment or important configuration and data-handling choices.",
+          "plausible": "Provides adequate control for common startup needs, with some provider or platform constraints.",
+          "strong": "Provides extensive control over deployment, configuration, and data-handling choices."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      }
+    ],
+    "facets": [],
+    "target_entity_count": 0,
+    "assumptions": [
+      "The startup expects to use a vector database in a production application, not only for a short-lived experiment.",
+      "No specific workload size, latency target, compliance requirement, cloud provider, or budget was provided.",
+      "The comparison should consider general managed and self-hosted approaches rather than specific database products.",
+      "No stated priority for startup_cost, control_and_customization: equal default weight 3."
+    ],
+    "initial_queries": [
+      "managed vs self-hosted vector databases operational effort startup",
+      "self-hosted vs managed vector database control maintenance tradeoffs"
+    ],
+    "search_context": ""
+  },
+  "cells": [
+    {
+      "alternative": "Managed vector database",
+      "criterion_id": "operational_effort",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_1",
+        "EV_6"
+      ],
+      "factual_confidence": "high",
+      "independent_sources": 2,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Managed vector database",
+      "criterion_id": "startup_cost",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_2",
+        "EV_7"
+      ],
+      "factual_confidence": "high",
+      "independent_sources": 2,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Managed vector database",
+      "criterion_id": "control_and_customization",
+      "state": "disputed",
+      "lower": 0,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [
+        "EV_3",
+        "EV_8"
+      ],
+      "factual_confidence": "low",
+      "independent_sources": 2,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Self-hosted vector database",
+      "criterion_id": "operational_effort",
+      "state": "supported",
+      "lower": 0,
+      "upper": 0,
+      "score": 0,
+      "evidence_ids": [
+        "EV_4",
+        "EV_9"
+      ],
+      "factual_confidence": "high",
+      "independent_sources": 2,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Self-hosted vector database",
+      "criterion_id": "startup_cost",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_10"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    },
+    {
+      "alternative": "Self-hosted vector database",
+      "criterion_id": "control_and_customization",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_5"
+      ],
+      "factual_confidence": "moderate",
+      "independent_sources": 1,
+      "scopes": [
+        "general"
+      ],
+      "scope_scores": {},
+      "excluded_evidence_ids": []
+    }
+  ],
+  "bounds": {
+    "Managed vector database": [
+      13,
+      19
+    ],
+    "Self-hosted vector database": [
+      9,
+      9
+    ]
+  },
+  "targets": [
+    {
+      "alternative": "Managed vector database",
+      "criterion_id": "control_and_customization",
+      "weight": 3,
+      "width": 2,
+      "flip_relevant": false,
+      "flip_factor": 1,
+      "predicted_gain": 6.0,
+      "priority": 3.0,
+      "state": "disputed"
+    }
+  ]
+}

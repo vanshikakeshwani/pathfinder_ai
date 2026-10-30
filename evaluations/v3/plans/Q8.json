@@ -1,0 +1,55 @@
+{
+  "plan": {
+    "question": "Identify five open-source LLM evaluation or observability tools, with evidence for license and self-hosting support.",
+    "mode": "discovery",
+    "alternatives": [],
+    "criteria": [],
+    "facets": [
+      {
+        "facet_id": "llm_evaluation_or_observability",
+        "description": "The entity is a tool for evaluating LLMs or observing LLM application behavior.",
+        "importance": 5,
+        "required_count": 5,
+        "search_terms": "LLM evaluation observability tool"
+      },
+      {
+        "facet_id": "open_source_license",
+        "description": "The entity has a clearly identified open-source license, supported by a source or official project evidence.",
+        "importance": 5,
+        "required_count": 5,
+        "search_terms": "open source license GitHub"
+      },
+      {
+        "facet_id": "self_hosting_support",
+        "description": "The entity provides evidence that users can self-host or deploy it on their own infrastructure.",
+        "importance": 5,
+        "required_count": 5,
+        "search_terms": "self-hosted deployment documentation"
+      }
+    ],
+    "target_entity_count": 5,
+    "assumptions": [
+      "Interpret open source as source code published under a clearly stated open-source license; report the actual license rather than assuming all licenses have equivalent terms.",
+      "Count a tool as self-hostable when official documentation or project materials describe deployment on user-controlled infrastructure.",
+      "Tools may focus on either LLM evaluation or observability; they do not need to provide both."
+    ],
+    "initial_queries": [
+      "open source LLM evaluation tools license self-hosted",
+      "open source LLM observability tools license self-hosting deployment"
+    ],
+    "search_context": "open-source LLM evaluation and observability tools"
+  },
+  "provenance": {
+    "source_store": "evaluations/snapshots/Q8/b891d16fe6/plan_rep1.json",
+    "source_store_sha256": "60a296c2c951cd3eee6add58bceeb43ca7939fabbf39d51b45444e53411a8137",
+    "regenerated_with": "pathfinder.planner (unchanged since V2) in replay mode",
+    "plan_hash": "f93cfd54aac04968",
+    "question": "Identify five open-source LLM evaluation or observability tools, with evidence for license and self-hosting support."
+  },
+  "validation": [
+    "mode is discovery as in queries.json",
+    "3 facets (>= 1)",
+    "target entity count 5",
+    "2 initial queries"
+  ]
+}

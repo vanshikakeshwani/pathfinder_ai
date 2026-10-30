@@ -1,0 +1,2563 @@
+{
+  "record_dir": "outputs\\eval_v2_E_20261030T045521_1e5cc3",
+  "runs": 36,
+  "fidelity": {
+    "comparison_rounds_checked": 93,
+    "mismatches": 0
+  },
+  "targeted_rounds": [
+    {
+      "qid": "Q1",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Milvus:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": true,
+      "corroborate": false,
+      "open_cells": 9,
+      "single_flip_cells": 9,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Milvus:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": true,
+      "prev_failed": true,
+      "success": true,
+      "flip_relevant": true,
+      "corroborate": false,
+      "open_cells": 8,
+      "single_flip_cells": 8,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Qdrant:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 6,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 1,
+      "arm": "static",
+      "round": 1,
+      "target": "Qdrant:deployment_fit",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 9,
+      "single_flip_cells": 9,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 1,
+      "arm": "static",
+      "round": 2,
+      "target": "Weaviate:filtering_capability",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 9,
+      "single_flip_cells": 9,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 1,
+      "arm": "static",
+      "round": 3,
+      "target": "Milvus:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 8,
+      "single_flip_cells": 6,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Qdrant:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": true,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 2,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Qdrant:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": true,
+      "prev_failed": true,
+      "success": true,
+      "flip_relevant": true,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 2,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Qdrant:deployment_fit",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": true,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 2,
+      "target_state": "disputed",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "static",
+      "round": 1,
+      "target": "Qdrant:deployment_fit",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 2,
+      "target_state": "scope_dependent",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "static",
+      "round": 2,
+      "target": "Weaviate:filtering_capability",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 2,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "static",
+      "round": 3,
+      "target": "Milvus:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 2,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Milvus:deployment_fit",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 7,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Milvus:deployment_fit",
+      "mode": "comparison",
+      "repeat_prev": true,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 7,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Milvus:filtering_capability",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 5,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 3,
+      "arm": "static",
+      "round": 1,
+      "target": "Qdrant:deployment_fit",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 7,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q1",
+      "rep": 3,
+      "arm": "static",
+      "round": 2,
+      "target": "Weaviate:filtering_capability",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 7,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q1",
+      "rep": 3,
+      "arm": "static",
+      "round": 3,
+      "target": "Milvus:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 6,
+      "single_flip_cells": 3,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "new_entities",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "new_entities",
+      "mode": "discovery",
+      "repeat_prev": true,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Cutshort|b2b_saas",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 1,
+      "arm": "static",
+      "round": 1,
+      "target": "india_headquarters",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 1,
+      "arm": "static",
+      "round": 2,
+      "target": "b2b_saas",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 1,
+      "arm": "static",
+      "round": 3,
+      "target": "hr_technology",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "FabHR|b2b_saas",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "HRORA|b2b_saas",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "new_entities",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 2,
+      "arm": "static",
+      "round": 1,
+      "target": "india_based",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 2,
+      "arm": "static",
+      "round": 2,
+      "target": "b2b_saas",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 2,
+      "arm": "static",
+      "round": 3,
+      "target": "hr_technology",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "greytHR|b2b_saas",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "greytHR|india_headquarters",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "greytHR|india_headquarters",
+      "mode": "discovery",
+      "repeat_prev": true,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 3,
+      "arm": "static",
+      "round": 1,
+      "target": "india_headquarters",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 3,
+      "arm": "static",
+      "round": 2,
+      "target": "b2b_saas",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q2",
+      "rep": 3,
+      "arm": "static",
+      "round": 3,
+      "target": "hr_technology",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q3",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Single-agent support automation:implementation_complexity",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 1,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q3",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Single-agent support automation:implementation_complexity",
+      "mode": "comparison",
+      "repeat_prev": true,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 1,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q3",
+      "rep": 1,
+      "arm": "static",
+      "round": 1,
+      "target": "Single-agent support automation:implementation_complexity",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 1,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q3",
+      "rep": 1,
+      "arm": "static",
+      "round": 2,
+      "target": "Multi-agent support automation:total_cost",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 1,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q3",
+      "rep": 1,
+      "arm": "static",
+      "round": 3,
+      "target": "Single-agent support automation:total_cost",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 1,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q3",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Multi-agent support automation:safeguards",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q3",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Multi-agent support automation:safeguards",
+      "mode": "comparison",
+      "repeat_prev": true,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q3",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Multi-agent support automation:total_cost",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q3",
+      "rep": 2,
+      "arm": "static",
+      "round": 1,
+      "target": "Single-agent support automation:implementation_and_operational_complexit",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q3",
+      "rep": 2,
+      "arm": "static",
+      "round": 2,
+      "target": "Multi-agent support automation:total_cost",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 4,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q3",
+      "rep": 2,
+      "arm": "static",
+      "round": 3,
+      "target": "Single-agent support automation:total_cost",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 4,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q3",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Multi-agent support automation:reliability",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 6,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q3",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Multi-agent support automation:reliability",
+      "mode": "comparison",
+      "repeat_prev": true,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 6,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q3",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Multi-agent support automation:safeguards",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 6,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q3",
+      "rep": 3,
+      "arm": "static",
+      "round": 1,
+      "target": "Single-agent support automation:implementation_complexity",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 6,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q3",
+      "rep": 3,
+      "arm": "static",
+      "round": 2,
+      "target": "Multi-agent support automation:total_cost",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q3",
+      "rep": 3,
+      "arm": "static",
+      "round": 3,
+      "target": "Single-agent support automation:total_cost",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Hybrid layered memory:retention_and_deletion_control",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 4,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Hybrid layered memory:retrieval_effectiveness",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Hybrid layered memory:retrieval_effectiveness",
+      "mode": "comparison",
+      "repeat_prev": true,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 1,
+      "arm": "static",
+      "round": 1,
+      "target": "Session-only memory:retrieval_effectiveness",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 4,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q4",
+      "rep": 1,
+      "arm": "static",
+      "round": 2,
+      "target": "Persistent conversation-log retrieval:privacy_protection",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 4,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q4",
+      "rep": 1,
+      "arm": "static",
+      "round": 3,
+      "target": "Summarized customer-profile memory:retention_and_deletion_control",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 4,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": true,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Retrieval-augmented episodic memory:long_term_continuity",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": true,
+      "corroborate": false,
+      "open_cells": 11,
+      "single_flip_cells": 11,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Retrieval-augmented episodic memory:long_term_continuity",
+      "mode": "comparison",
+      "repeat_prev": true,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": true,
+      "corroborate": false,
+      "open_cells": 11,
+      "single_flip_cells": 11,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Retrieval-augmented episodic memory:privacy_controls",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": true,
+      "corroborate": false,
+      "open_cells": 11,
+      "single_flip_cells": 11,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 2,
+      "arm": "static",
+      "round": 1,
+      "target": "Session-only context:retrieval_quality",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 11,
+      "single_flip_cells": 11,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q4",
+      "rep": 2,
+      "arm": "static",
+      "round": 2,
+      "target": "Retrieval-augmented episodic memory:short_term_continuity",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 11,
+      "single_flip_cells": 11,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 2,
+      "arm": "static",
+      "round": 3,
+      "target": "Structured persistent customer profile:long_term_continuity",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 11,
+      "single_flip_cells": 11,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Hybrid tiered memory:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": true,
+      "corroborate": false,
+      "open_cells": 16,
+      "single_flip_cells": 16,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Hybrid tiered memory:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": true,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": true,
+      "corroborate": false,
+      "open_cells": 16,
+      "single_flip_cells": 16,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Hybrid tiered memory:privacy_controls",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": true,
+      "flip_relevant": true,
+      "corroborate": false,
+      "open_cells": 16,
+      "single_flip_cells": 16,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 3,
+      "arm": "static",
+      "round": 1,
+      "target": "Session-only context-window memory:retrieval_usefulness",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 16,
+      "single_flip_cells": 16,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 3,
+      "arm": "static",
+      "round": 2,
+      "target": "Retrieval-augmented episodic memory:privacy_controls",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 14,
+      "single_flip_cells": 12,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q4",
+      "rep": 3,
+      "arm": "static",
+      "round": 3,
+      "target": "Structured customer-profile memory:retention_and_deletion",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 14,
+      "single_flip_cells": 12,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "undetermined",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Managed vector database:operational_effort#corroborate",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": true,
+      "open_cells": 1,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "robust",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 1,
+      "arm": "static",
+      "round": 1,
+      "target": "Managed vector database:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 1,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "robust",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q5",
+      "rep": 1,
+      "arm": "static",
+      "round": 2,
+      "target": "Self-hosted vector database:startup_cost",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 1,
+      "arm": "static",
+      "round": 3,
+      "target": "Managed vector database:startup_cost",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 3,
+      "target_state": "disputed",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Managed vector database:operational_effort#corroborate",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": true,
+      "open_cells": 2,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "robust",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Self-hosted vector database:operational_effort#corroborate",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": true,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "robust",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Self-hosted vector database:operational_effort#corroborate",
+      "mode": "comparison",
+      "repeat_prev": true,
+      "prev_failed": true,
+      "success": false,
+      "flip_relevant": false,
+      "corroborate": true,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "robust",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 2,
+      "arm": "static",
+      "round": 1,
+      "target": "Managed vector database:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 2,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "robust",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q5",
+      "rep": 2,
+      "arm": "static",
+      "round": 2,
+      "target": "Self-hosted vector database:total_cost",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 2,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "robust",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 2,
+      "arm": "static",
+      "round": 3,
+      "target": "Managed vector database:total_cost",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 1,
+      "single_flip_cells": 0,
+      "target_state": "unknown",
+      "group_relevant": false,
+      "state": "robust",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Managed vector database:operational_effort#corroborate",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": true,
+      "open_cells": 2,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "robust",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Self-hosted vector database:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "disputed",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Self-hosted vector database:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": true,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "disputed",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": false
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "static",
+      "round": 1,
+      "target": "Managed vector database:operational_effort",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 2,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "robust",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "static",
+      "round": 2,
+      "target": "Self-hosted vector database:time_to_production",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 2,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "robust",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "static",
+      "round": 3,
+      "target": "Managed vector database:time_to_production",
+      "mode": "comparison",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false,
+      "open_cells": 3,
+      "single_flip_cells": 0,
+      "target_state": "supported",
+      "group_relevant": false,
+      "state": "provisional",
+      "target_already_supported": true
+    },
+    {
+      "qid": "Q8",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "DeepEval|llm_evaluation_or_observability",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "OpenLLMetry|self_hosting_support",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 1,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "OpenLLMetry|self_hosting_support",
+      "mode": "discovery",
+      "repeat_prev": true,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 1,
+      "arm": "static",
+      "round": 1,
+      "target": "llm_evaluation_or_observability",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 1,
+      "arm": "static",
+      "round": 2,
+      "target": "open_source_license",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 1,
+      "arm": "static",
+      "round": 3,
+      "target": "self_hosting_support",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "new_entities",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "OpenLIT|llm_evaluation_or_observability",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "new_entities",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 2,
+      "arm": "static",
+      "round": 1,
+      "target": "llm_evaluation_or_observability",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 2,
+      "arm": "static",
+      "round": 2,
+      "target": "open_source_license",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 2,
+      "arm": "static",
+      "round": 3,
+      "target": "self_hosting_support",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 1,
+      "target": "Langfuse|license_and_deployment_evidence",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 2,
+      "target": "Langfuse|license_and_deployment_evidence",
+      "mode": "discovery",
+      "repeat_prev": true,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 3,
+      "target": "Langfuse|open_source_license",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 3,
+      "arm": "static",
+      "round": 1,
+      "target": "llm_eval_or_observability",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 3,
+      "arm": "static",
+      "round": 2,
+      "target": "open_source_license",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    },
+    {
+      "qid": "Q8",
+      "rep": 3,
+      "arm": "static",
+      "round": 3,
+      "target": "self_hosting_support",
+      "mode": "discovery",
+      "repeat_prev": false,
+      "prev_failed": false,
+      "success": true,
+      "flip_relevant": false,
+      "corroborate": false
+    }
+  ],
+  "summary_targeting": {
+    "adaptive": {
+      "all": {
+        "rounds": 51,
+        "repeat_prev": 15,
+        "repeat_after_failure": 10,
+        "repeat_succeeded": 7,
+        "success": 29
+      },
+      "comparison": {
+        "rounds": 33,
+        "repeat_prev": 11,
+        "repeat_after_failure": 10,
+        "repeat_succeeded": 3,
+        "success": 11
+      },
+      "discovery": {
+        "rounds": 18,
+        "repeat_prev": 4,
+        "repeat_after_failure": 0,
+        "repeat_succeeded": 4,
+        "success": 18
+      },
+      "comparison_flip_relevant_chosen": 11,
+      "comparison_corroborate": 5,
+      "comparison_rounds_with_any_single_flip_cell": 11,
+      "comparison_rounds_group_only_relevant": 8,
+      "comparison_rounds_no_relevance_at_all": 9,
+      "target_already_supported": 0,
+      "repeat_with_other_open_cells": 10
+    },
+    "static": {
+      "all": {
+        "rounds": 54,
+        "repeat_prev": 0,
+        "repeat_after_failure": 0,
+        "repeat_succeeded": 0,
+        "success": 41
+      },
+      "comparison": {
+        "rounds": 36,
+        "repeat_prev": 0,
+        "repeat_after_failure": 0,
+        "repeat_succeeded": 0,
+        "success": 23
+      },
+      "discovery": {
+        "rounds": 18,
+        "repeat_prev": 0,
+        "repeat_after_failure": 0,
+        "repeat_succeeded": 0,
+        "success": 18
+      },
+      "comparison_flip_relevant_chosen": 0,
+      "comparison_corroborate": 0,
+      "comparison_rounds_with_any_single_flip_cell": 14,
+      "comparison_rounds_group_only_relevant": 7,
+      "comparison_rounds_no_relevance_at_all": 15,
+      "target_already_supported": 17,
+      "repeat_with_other_open_cells": 0
+    }
+  },
+  "disputes_final": [
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "adaptive",
+      "cell": "Qdrant:deployment_fit",
+      "scores": [
+        1,
+        2
+      ],
+      "scopes": [
+        "managed",
+        "self_hosted"
+      ],
+      "sources": 3
+    },
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "adaptive",
+      "cell": "Weaviate:filtering_capability",
+      "scores": [
+        1,
+        2
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 2
+    },
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "adaptive",
+      "cell": "Milvus:deployment_fit",
+      "scores": [
+        0,
+        1
+      ],
+      "scopes": [
+        "self_hosted"
+      ],
+      "sources": 2
+    },
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "static",
+      "cell": "Qdrant:deployment_fit",
+      "scores": [
+        1,
+        2
+      ],
+      "scopes": [
+        "managed",
+        "self_hosted"
+      ],
+      "sources": 2
+    },
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "static",
+      "cell": "Milvus:deployment_fit",
+      "scores": [
+        1,
+        2
+      ],
+      "scopes": [
+        "self_hosted"
+      ],
+      "sources": 2
+    },
+    {
+      "qid": "Q1",
+      "rep": 3,
+      "arm": "static",
+      "cell": "Milvus:operational_effort",
+      "scores": [
+        0,
+        2
+      ],
+      "scopes": [
+        "managed",
+        "self_hosted"
+      ],
+      "sources": 1
+    },
+    {
+      "qid": "Q3",
+      "rep": 2,
+      "arm": "static",
+      "cell": "Single-agent support automation:implementation_and_operational_complexit",
+      "scores": [
+        1,
+        2
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 2
+    },
+    {
+      "qid": "Q3",
+      "rep": 2,
+      "arm": "static",
+      "cell": "Single-agent support automation:reliability",
+      "scores": [
+        1,
+        2
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 2
+    },
+    {
+      "qid": "Q5",
+      "rep": 1,
+      "arm": "adaptive",
+      "cell": "Managed vector database:control_and_customization",
+      "scores": [
+        0,
+        1
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 2
+    },
+    {
+      "qid": "Q5",
+      "rep": 1,
+      "arm": "static",
+      "cell": "Managed vector database:startup_cost",
+      "scores": [
+        1,
+        2
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 4
+    },
+    {
+      "qid": "Q5",
+      "rep": 1,
+      "arm": "static",
+      "cell": "Managed vector database:control_and_customization",
+      "scores": [
+        0,
+        1
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 3
+    },
+    {
+      "qid": "Q5",
+      "rep": 1,
+      "arm": "static",
+      "cell": "Self-hosted vector database:operational_effort",
+      "scores": [
+        0,
+        1
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 4
+    },
+    {
+      "qid": "Q5",
+      "rep": 1,
+      "arm": "static",
+      "cell": "Self-hosted vector database:startup_cost",
+      "scores": [
+        0,
+        1
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 3
+    },
+    {
+      "qid": "Q5",
+      "rep": 2,
+      "arm": "adaptive",
+      "cell": "Self-hosted vector database:operational_control",
+      "scores": [
+        1,
+        2
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 2
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "adaptive",
+      "cell": "Managed vector database:total_cost",
+      "scores": [
+        1,
+        2
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 2
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "adaptive",
+      "cell": "Self-hosted vector database:operational_effort",
+      "scores": [
+        0,
+        1
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 4
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "static",
+      "cell": "Managed vector database:total_cost",
+      "scores": [
+        1,
+        2
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 2
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "static",
+      "cell": "Self-hosted vector database:operational_effort",
+      "scores": [
+        0,
+        1
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 4
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "static",
+      "cell": "Self-hosted vector database:time_to_production",
+      "scores": [
+        0,
+        1
+      ],
+      "scopes": [
+        "general"
+      ],
+      "sources": 3
+    }
+  ],
+  "disputes_summary": {
+    "cells": 19,
+    "by_arm": {
+      "adaptive": 7,
+      "static": 12
+    },
+    "score_sets": {
+      "[1, 2]": 10,
+      "[0, 1]": 8,
+      "[0, 2]": 1
+    },
+    "adjacent_1_2": 10,
+    "adjacent_0_1": 8,
+    "spanning_0_2": 1
+  },
+  "coverage_drops": [
+    {
+      "qid": "Q3",
+      "rep": 2,
+      "arm": "static",
+      "round": 1,
+      "from": 5,
+      "to": 4
+    },
+    {
+      "qid": "Q5",
+      "rep": 1,
+      "arm": "static",
+      "round": 1,
+      "from": 5,
+      "to": 3
+    },
+    {
+      "qid": "Q5",
+      "rep": 1,
+      "arm": "static",
+      "round": 3,
+      "from": 3,
+      "to": 2
+    },
+    {
+      "qid": "Q5",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 1,
+      "from": 4,
+      "to": 3
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "adaptive",
+      "round": 1,
+      "from": 4,
+      "to": 3
+    },
+    {
+      "qid": "Q5",
+      "rep": 3,
+      "arm": "static",
+      "round": 2,
+      "from": 4,
+      "to": 3
+    }
+  ],
+  "premature_stops": [
+    {
+      "qid": "Q1",
+      "rep": 1,
+      "arm": "static",
+      "stop_round": 1,
+      "would_stop": "no_progress",
+      "units_at_stop": 0,
+      "units_full": 3,
+      "new_units_per_round": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "tool_or_llm_failures_by_round": {},
+      "round0_new_units": 0
+    },
+    {
+      "qid": "Q3",
+      "rep": 3,
+      "arm": "adaptive",
+      "stop_round": 2,
+      "would_stop": "no_progress",
+      "units_at_stop": 2,
+      "units_full": 3,
+      "new_units_per_round": [
+        2,
+        0,
+        0,
+        1
+      ],
+      "tool_or_llm_failures_by_round": {},
+      "round0_new_units": 2
+    },
+    {
+      "qid": "Q4",
+      "rep": 1,
+      "arm": "static",
+      "stop_round": 2,
+      "would_stop": "no_progress",
+      "units_at_stop": 8,
+      "units_full": 9,
+      "new_units_per_round": [
+        8,
+        0,
+        0,
+        1
+      ],
+      "tool_or_llm_failures_by_round": {},
+      "round0_new_units": 8
+    },
+    {
+      "qid": "Q4",
+      "rep": 2,
+      "arm": "static",
+      "stop_round": 2,
+      "would_stop": "no_progress",
+      "units_at_stop": 4,
+      "units_full": 5,
+      "new_units_per_round": [
+        4,
+        0,
+        0,
+        1
+      ],
+      "tool_or_llm_failures_by_round": {},
+      "round0_new_units": 4
+    },
+    {
+      "qid": "Q4",
+      "rep": 3,
+      "arm": "adaptive",
+      "stop_round": 1,
+      "would_stop": "no_progress",
+      "units_at_stop": 0,
+      "units_full": 1,
+      "new_units_per_round": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "tool_or_llm_failures_by_round": {
+        "0": 1
+      },
+      "round0_new_units": 0
+    }
+  ],
+  "readiness": {
+    "status": {
+      "withheld": 18,
+      "none": 5,
+      "ready": 1
+    },
+    "withheld_reasons": {
+      "score intervals overlap": 16,
+      "differentiating cells lack strong support": 11
+    }
+  },
+  "plans": {
+    "Q1": {
+      "1": {
+        "alternatives": [
+          "Qdrant",
+          "Weaviate",
+          "Milvus"
+        ],
+        "criteria": [
+          "deployment_fit",
+          "filtering_capability",
+          "operational_effort"
+        ],
+        "facets": [],
+        "units": 9
+      },
+      "2": {
+        "alternatives": [
+          "Qdrant",
+          "Weaviate",
+          "Milvus"
+        ],
+        "criteria": [
+          "deployment_fit",
+          "filtering_capability",
+          "operational_effort"
+        ],
+        "facets": [],
+        "units": 9
+      },
+      "3": {
+        "alternatives": [
+          "Qdrant",
+          "Weaviate",
+          "Milvus"
+        ],
+        "criteria": [
+          "deployment_fit",
+          "filtering_capability",
+          "operational_effort"
+        ],
+        "facets": [],
+        "units": 9
+      }
+    },
+    "Q2": {
+      "1": {
+        "alternatives": [],
+        "criteria": [],
+        "facets": [
+          "india_headquarters",
+          "b2b_saas",
+          "hr_technology",
+          "market_positioning"
+        ],
+        "units": 5
+      },
+      "2": {
+        "alternatives": [],
+        "criteria": [],
+        "facets": [
+          "india_based",
+          "b2b_saas",
+          "hr_technology",
+          "market_positioning_evidence",
+          "headquarters_evidence"
+        ],
+        "units": 5
+      },
+      "3": {
+        "alternatives": [],
+        "criteria": [],
+        "facets": [
+          "india_headquarters",
+          "b2b_saas",
+          "hr_technology",
+          "market_positioning"
+        ],
+        "units": 5
+      }
+    },
+    "Q3": {
+      "1": {
+        "alternatives": [
+          "Single-agent support automation",
+          "Multi-agent support automation"
+        ],
+        "criteria": [
+          "implementation_complexity",
+          "total_cost",
+          "reliability",
+          "safeguards"
+        ],
+        "facets": [],
+        "units": 8
+      },
+      "2": {
+        "alternatives": [
+          "Single-agent support automation",
+          "Multi-agent support automation"
+        ],
+        "criteria": [
+          "implementation_and_operational_complexit",
+          "total_cost",
+          "reliability",
+          "safeguards"
+        ],
+        "facets": [],
+        "units": 8
+      },
+      "3": {
+        "alternatives": [
+          "Single-agent support automation",
+          "Multi-agent support automation"
+        ],
+        "criteria": [
+          "implementation_complexity",
+          "total_cost",
+          "reliability",
+          "safeguards"
+        ],
+        "facets": [],
+        "units": 8
+      }
+    },
+    "Q4": {
+      "1": {
+        "alternatives": [
+          "Session-only memory",
+          "Persistent conversation-log retrieval",
+          "Summarized customer-profile memory",
+          "Hybrid layered memory"
+        ],
+        "criteria": [
+          "retrieval_effectiveness",
+          "privacy_protection",
+          "retention_and_deletion_control"
+        ],
+        "facets": [],
+        "units": 12
+      },
+      "2": {
+        "alternatives": [
+          "Session-only context",
+          "Retrieval-augmented episodic memory",
+          "Structured persistent customer profile"
+        ],
+        "criteria": [
+          "retrieval_quality",
+          "short_term_continuity",
+          "long_term_continuity",
+          "privacy_controls",
+          "retention_deletion_controls"
+        ],
+        "facets": [],
+        "units": 15
+      },
+      "3": {
+        "alternatives": [
+          "Session-only context-window memory",
+          "Retrieval-augmented episodic memory",
+          "Structured customer-profile memory",
+          "Hybrid tiered memory"
+        ],
+        "criteria": [
+          "retrieval_usefulness",
+          "privacy_controls",
+          "retention_and_deletion",
+          "operational_effort"
+        ],
+        "facets": [],
+        "units": 16
+      }
+    },
+    "Q5": {
+      "1": {
+        "alternatives": [
+          "Managed vector database",
+          "Self-hosted vector database"
+        ],
+        "criteria": [
+          "operational_effort",
+          "startup_cost",
+          "control_and_customization"
+        ],
+        "facets": [],
+        "units": 6
+      },
+      "2": {
+        "alternatives": [
+          "Managed vector database",
+          "Self-hosted vector database"
+        ],
+        "criteria": [
+          "operational_effort",
+          "total_cost",
+          "operational_control"
+        ],
+        "facets": [],
+        "units": 6
+      },
+      "3": {
+        "alternatives": [
+          "Managed vector database",
+          "Self-hosted vector database"
+        ],
+        "criteria": [
+          "operational_effort",
+          "time_to_production",
+          "total_cost"
+        ],
+        "facets": [],
+        "units": 6
+      }
+    },
+    "Q8": {
+      "1": {
+        "alternatives": [],
+        "criteria": [],
+        "facets": [
+          "llm_evaluation_or_observability",
+          "open_source_license",
+          "self_hosting_support"
+        ],
+        "units": 5
+      },
+      "2": {
+        "alternatives": [],
+        "criteria": [],
+        "facets": [
+          "llm_evaluation_or_observability",
+          "open_source_license",
+          "self_hosting_support"
+        ],
+        "units": 5
+      },
+      "3": {
+        "alternatives": [],
+        "criteria": [],
+        "facets": [
+          "llm_eval_or_observability",
+          "open_source_license",
+          "self_hosting_support",
+          "license_and_deployment_evidence"
+        ],
+        "units": 5
+      }
+    }
+  },
+  "flips": [
+    {
+      "qid": "Q1",
+      "rep": 2,
+      "arm": "adaptive",
+      "round": 2,
+      "kind": "leader_changed",
+      "before": {
+        "recommended": "Weaviate",
+        "stability": "provisional"
+      },
+      "after": {
+        "recommended": "Qdrant",
+        "stability": "undetermined"
+      },
+      "evidence_ids": [
+        "EV_9",
+        "EV_10",
+        "EV_11",
+        "EV_12",
+        "EV_13",
+        "EV_14",
+        "EV_15",
+        "EV_16"
+      ]
+    }
+  ]
+}

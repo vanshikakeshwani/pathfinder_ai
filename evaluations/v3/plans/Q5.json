@@ -1,0 +1,110 @@
+{
+  "plan": {
+    "question": "Choose between managed and self-hosted vector databases for a startup with one backend engineer and limited operations time.",
+    "mode": "comparison",
+    "alternatives": [
+      {
+        "name": "Managed vector database",
+        "aliases": [],
+        "official_domains": [],
+        "kind": "approach",
+        "defining_features": [
+          "Provider operates the database infrastructure, upgrades, and routine maintenance",
+          "Typically offers a hosted service with provider-managed scaling and availability",
+          "Reduces the startup's direct infrastructure and database operations work"
+        ]
+      },
+      {
+        "name": "Self-hosted vector database",
+        "aliases": [],
+        "official_domains": [],
+        "kind": "approach",
+        "defining_features": [
+          "Startup deploys and operates the database on its own infrastructure",
+          "Team is responsible for upgrades, monitoring, backups, scaling, and incident response",
+          "Offers greater control over deployment, configuration, and infrastructure choices"
+        ]
+      }
+    ],
+    "criteria": [
+      {
+        "criterion_id": "operational_effort",
+        "description": "Engineering and operations effort required for deployment, maintenance, monitoring, scaling, and troubleshooting, given one backend engineer and limited operations time.",
+        "direction": "lower_is_better",
+        "weight": 5,
+        "weight_source": "inferred",
+        "anchors": {
+          "poor": "Requires substantial ongoing infrastructure work or frequent hands-on intervention that is difficult for one backend engineer to sustain.",
+          "plausible": "Can be operated with some recurring engineering attention, but leaves manageable time for other startup work.",
+          "strong": "Requires little ongoing operational attention and is practical for a startup with one backend engineer and limited operations time."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "startup_cost",
+        "description": "Overall cost to get started and run the database at a startup's likely early-stage scale, including service or infrastructure charges and material operational overhead.",
+        "direction": "lower_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Likely to impose high or unpredictable costs relative to an early-stage startup's needs.",
+          "plausible": "Cost appears manageable at modest usage, though meaningful charges or overhead may arise as usage grows.",
+          "strong": "Offers a clear, affordable path for modest early-stage usage with costs that appear reasonably predictable."
+        },
+        "thresholds": null,
+        "time_sensitive": true,
+        "scopes": [],
+        "preferred_scope": null
+      },
+      {
+        "criterion_id": "control_and_customization",
+        "description": "Degree of control over deployment environment, configuration, data handling, and database behavior.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Provides limited control over deployment or important configuration and data-handling choices.",
+          "plausible": "Provides adequate control for common startup needs, with some provider or platform constraints.",
+          "strong": "Provides extensive control over deployment, configuration, and data-handling choices."
+        },
+        "thresholds": null,
+        "time_sensitive": false,
+        "scopes": [],
+        "preferred_scope": null
+      }
+    ],
+    "facets": [],
+    "target_entity_count": 0,
+    "assumptions": [
+      "The startup expects to use a vector database in a production application, not only for a short-lived experiment.",
+      "No specific workload size, latency target, compliance requirement, cloud provider, or budget was provided.",
+      "The comparison should consider general managed and self-hosted approaches rather than specific database products.",
+      "No stated priority for startup_cost, control_and_customization: equal default weight 3."
+    ],
+    "initial_queries": [
+      "managed vs self-hosted vector databases operational effort startup",
+      "self-hosted vs managed vector database control maintenance tradeoffs"
+    ],
+    "search_context": ""
+  },
+  "provenance": {
+    "source_store": "evaluations/snapshots/Q5/b891d16fe6/plan_rep1.json",
+    "source_store_sha256": "4a445a8697f7a90c96fe2299512b8ae265f7059a6c5785c13e54d87ea79565f8",
+    "regenerated_with": "pathfinder.planner (unchanged since V2) in replay mode",
+    "plan_hash": "d8f8ebab8c004659",
+    "question": "Choose between managed and self-hosted vector databases for a startup with one backend engineer and limited operations time."
+  },
+  "validation": [
+    "mode is comparison as in queries.json",
+    "2 alternatives (>= 2)",
+    "3 criteria (2-6)",
+    "unique criterion ids",
+    "weights within 1-5",
+    "every criterion has 0/1/2 rubric anchors",
+    "preferred scopes are declared scopes",
+    "2 initial queries"
+  ]
+}

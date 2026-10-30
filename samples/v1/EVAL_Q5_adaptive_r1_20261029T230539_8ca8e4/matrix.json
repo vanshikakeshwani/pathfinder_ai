@@ -1,0 +1,240 @@
+{
+  "plan": {
+    "question": "Choose between managed and self-hosted vector databases for a startup with one backend engineer and limited operations time.",
+    "mode": "comparison",
+    "alternatives": [
+      {
+        "name": "Managed vector databases",
+        "aliases": [
+          "Vector database as a service",
+          "Hosted vector databases"
+        ],
+        "official_domains": []
+      },
+      {
+        "name": "Self-hosted vector databases",
+        "aliases": [
+          "Self-managed vector databases",
+          "On-premises vector databases"
+        ],
+        "official_domains": []
+      }
+    ],
+    "criteria": [
+      {
+        "criterion_id": "operations_effort",
+        "description": "Ongoing engineering and operations effort for deployment, upgrades, monitoring, backups, scaling, and incident response.",
+        "direction": "lower_is_better",
+        "weight": 5,
+        "weight_source": "inferred",
+        "anchors": {
+          "poor": "Requires substantial ongoing operations work that is a poor fit for a startup with limited operations time.",
+          "plausible": "Some operational work is needed, but it may be manageable with careful scoping and automation.",
+          "strong": "Provider handles most routine operations, keeping ongoing work low for a small team."
+        },
+        "thresholds": null,
+        "time_sensitive": false
+      },
+      {
+        "criterion_id": "engineering_effort",
+        "description": "Backend engineering effort needed to get a production-ready system running and maintain its integrations.",
+        "direction": "lower_is_better",
+        "weight": 4,
+        "weight_source": "inferred",
+        "anchors": {
+          "poor": "Typically requires substantial infrastructure and maintenance work that could strain a one-engineer backend team.",
+          "plausible": "Can be implemented by one backend engineer, but requires meaningful setup or continuing engineering attention.",
+          "strong": "Can typically be adopted and maintained with modest backend engineering effort."
+        },
+        "thresholds": null,
+        "time_sensitive": false
+      },
+      {
+        "criterion_id": "operational_resilience",
+        "description": "How readily the approach supports reliable availability, recovery, and scaling without depending on extensive in-house operations capacity.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "Achieving reliable service and recovery would place substantial responsibility on the startup's small team.",
+          "plausible": "Reliability and recovery are achievable, but require deliberate configuration or operational work.",
+          "strong": "Reliability, recovery, and scaling are well supported with little specialized in-house operations work."
+        },
+        "thresholds": null,
+        "time_sensitive": false
+      },
+      {
+        "criterion_id": "control_and_customization",
+        "description": "Ability to control deployment environment, configuration, data handling, and infrastructure choices.",
+        "direction": "higher_is_better",
+        "weight": 3,
+        "weight_source": "default",
+        "anchors": {
+          "poor": "The approach imposes significant constraints on deployment or infrastructure choices.",
+          "plausible": "Provides useful configuration options, with some constraints or provider dependencies.",
+          "strong": "Provides broad control over deployment, configuration, and infrastructure."
+        },
+        "thresholds": null,
+        "time_sensitive": false
+      }
+    ],
+    "facets": [],
+    "target_entity_count": 2,
+    "assumptions": [
+      "The startup is choosing an operating model rather than selecting a particular vector database product.",
+      "Limited operations time is the primary stated constraint; no workload size, availability target, data residency requirement, or budget was specified.",
+      "The comparison should consider general tradeoffs and avoid assuming a particular cloud provider, deployment environment, or technology stack.",
+      "No stated priority for operational_resilience, control_and_customization: equal default weight 3."
+    ],
+    "initial_queries": [
+      "managed versus self-hosted vector databases startup operations effort comparison",
+      "managed vector database vs self-hosted vector database engineering maintenance reliability"
+    ]
+  },
+  "cells": [
+    {
+      "alternative": "Managed vector databases",
+      "criterion_id": "operations_effort",
+      "state": "unknown",
+      "lower": 0,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [],
+      "factual_confidence": "n.a."
+    },
+    {
+      "alternative": "Managed vector databases",
+      "criterion_id": "engineering_effort",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_2"
+      ],
+      "factual_confidence": "moderate"
+    },
+    {
+      "alternative": "Managed vector databases",
+      "criterion_id": "operational_resilience",
+      "state": "unknown",
+      "lower": 0,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [],
+      "factual_confidence": "n.a."
+    },
+    {
+      "alternative": "Managed vector databases",
+      "criterion_id": "control_and_customization",
+      "state": "supported",
+      "lower": 1,
+      "upper": 1,
+      "score": 1,
+      "evidence_ids": [
+        "EV_1"
+      ],
+      "factual_confidence": "moderate"
+    },
+    {
+      "alternative": "Self-hosted vector databases",
+      "criterion_id": "operations_effort",
+      "state": "supported",
+      "lower": 0,
+      "upper": 0,
+      "score": 0,
+      "evidence_ids": [
+        "EV_3"
+      ],
+      "factual_confidence": "moderate"
+    },
+    {
+      "alternative": "Self-hosted vector databases",
+      "criterion_id": "engineering_effort",
+      "state": "unknown",
+      "lower": 0,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [],
+      "factual_confidence": "n.a."
+    },
+    {
+      "alternative": "Self-hosted vector databases",
+      "criterion_id": "operational_resilience",
+      "state": "unknown",
+      "lower": 0,
+      "upper": 2,
+      "score": null,
+      "evidence_ids": [],
+      "factual_confidence": "n.a."
+    },
+    {
+      "alternative": "Self-hosted vector databases",
+      "criterion_id": "control_and_customization",
+      "state": "supported",
+      "lower": 2,
+      "upper": 2,
+      "score": 2,
+      "evidence_ids": [
+        "EV_4"
+      ],
+      "factual_confidence": "moderate"
+    }
+  ],
+  "bounds": {
+    "Managed vector databases": [
+      11,
+      27
+    ],
+    "Self-hosted vector databases": [
+      6,
+      20
+    ]
+  },
+  "targets": [
+    {
+      "alternative": "Managed vector databases",
+      "criterion_id": "operations_effort",
+      "weight": 5,
+      "width": 2,
+      "flip_relevant": false,
+      "flip_factor": 1,
+      "predicted_gain": 10.0,
+      "priority": 5.0,
+      "state": "unknown"
+    },
+    {
+      "alternative": "Self-hosted vector databases",
+      "criterion_id": "engineering_effort",
+      "weight": 4,
+      "width": 2,
+      "flip_relevant": false,
+      "flip_factor": 1,
+      "predicted_gain": 8.0,
+      "priority": 4.0,
+      "state": "unknown"
+    },
+    {
+      "alternative": "Managed vector databases",
+      "criterion_id": "operational_resilience",
+      "weight": 3,
+      "width": 2,
+      "flip_relevant": false,
+      "flip_factor": 1,
+      "predicted_gain": 6.0,
+      "priority": 3.0,
+      "state": "unknown"
+    },
+    {
+      "alternative": "Self-hosted vector databases",
+      "criterion_id": "operational_resilience",
+      "weight": 3,
+      "width": 2,
+      "flip_relevant": false,
+      "flip_factor": 1,
+      "predicted_gain": 6.0,
+      "priority": 3.0,
+      "state": "unknown"
+    }
+  ]
+}
